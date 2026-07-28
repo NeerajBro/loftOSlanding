@@ -9,7 +9,7 @@ export default function Testimonials() {
         <SectionHeading
           eyebrow="Testimonials"
           title="Owners who stopped guessing and started measuring"
-          subtitle="Realistic outcomes from lounges, cafés, restaurants, and franchise operators running entertainment floors every day."
+          subtitle="Realistic outcomes from lounges, cafés, restaurants, and multi-location operators running entertainment floors every day."
         />
         <div className="grid gap-5 md:grid-cols-2">
           {testimonials.map((t, i) => (

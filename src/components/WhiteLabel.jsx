@@ -33,7 +33,7 @@ const perks = [
   'Own customers & bookings',
   'Database isolation per tenant',
   'Own domain-ready public surfaces',
-  'Franchise-ready lead pipeline',
+  'Expansion-ready lead pipeline',
 ]
 
 export default function WhiteLabel() {
@@ -84,7 +84,7 @@ export default function WhiteLabel() {
               One platform. Unlimited businesses.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-white/65">
-              Powerful for franchises: centralized plans and feature control upstairs, fully branded
+              Powerful for multi-location brands: centralized plans and feature control upstairs, fully branded
               local operations downstairs. Every tenant looks like their own product — because it is.
             </p>
             <ul className="mt-8 grid gap-3 sm:grid-cols-2">

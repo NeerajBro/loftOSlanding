@@ -24,9 +24,9 @@ export const problems = [
     icon: 'users',
   },
   {
-    title: 'No online menu',
+    title: 'Paper menu only',
     description:
-      'Guests wait for a paper menu while staff juggle tables. Queues grow, tables turn slower, and kitchen tickets get messy.',
+      'Guests pass around a paper menu with no live updates or app branding. Orders get delayed, tables turn slower, and kitchen tickets get messy.',
     icon: 'qr',
   },
   {
@@ -50,7 +50,7 @@ export const problems = [
   {
     title: 'No branch visibility',
     description:
-      'Franchise and multi-location owners fly blind. Each outlet invents its own process with no unified branding or reporting.',
+      'Multi-location owners fly blind. Each outlet invents its own process with no unified branding or reporting.',
     icon: 'branches',
   },
 ]
@@ -93,8 +93,8 @@ export const solutions = [
     description: 'Credit and debit ledger tied to reports so profit isn’t a guess at month-end.',
   },
   {
-    title: 'CRM & franchise leads',
-    description: 'Capture franchise inquiries from your website and work them through a simple pipeline with notes.',
+    title: 'CRM & expansion leads',
+    description: 'Capture expansion inquiries from your website and work them through a simple pipeline with notes.',
   },
 ]
 
@@ -189,7 +189,7 @@ export const industries = [
   { name: 'Pool & Snooker Club', blurb: 'Table time, party size, and F&B tabs that settle cleanly at checkout.' },
   { name: 'Esports Arena', blurb: 'Events, competitions, and high-throughput billing when the floor is packed.' },
   { name: 'Food Court', blurb: 'Fast counter billing with stock alerts across high-velocity SKUs.' },
-  { name: 'Gaming Franchise', blurb: 'White-label tenants, feature plans, and franchise lead pipelines at scale.' },
+  { name: 'Gaming Network', blurb: 'White-label tenants, feature plans, and expansion lead pipelines at scale.' },
   { name: 'Entertainment Center', blurb: 'Games, food, bookings, and events under one operating system.' },
 ]
 
@@ -217,9 +217,9 @@ export const testimonials = [
   },
   {
     quote:
-      'We onboarded three franchise outlets on white-label LoftOS. Same platform, their branding — and repeat bookings jumped about 30%.',
+      'We onboarded three new outlets on white-label LoftOS. Same platform, their branding — and repeat bookings jumped about 30%.',
     name: 'Sneha Kapoor',
-    role: 'Franchise Director, Arcadia Group',
+    role: 'Operations Director, Arcadia Group',
     metric: '30% more repeat guests',
   },
 ]
@@ -266,12 +266,12 @@ export const pricingPlans = [
     name: 'Business',
     price: '₹9,999',
     period: '/month',
-    description: 'For franchises and multi-tenant entertainment brands.',
+    description: 'For multi-location and multi-tenant entertainment brands.',
     features: [
       'Everything in Pro',
       'Slot bookings & block-outs',
       'Public events management',
-      'Franchise inquiry CRM',
+      'Expansion inquiry CRM',
       'Feature flags per tenant',
       'Superadmin control plane',
       'Dedicated success support',
@@ -299,8 +299,8 @@ export const faqs = [
     a: 'Yes. Each business gets its own logo, colors, receipt header/footer, business name, public menu identity, and isolated data — without building software from scratch.',
   },
   {
-    q: 'Can I manage multiple branches or franchise outlets?',
-    a: 'LoftOS is multi-tenant: each outlet or franchisee is an organization with its own branding, menu, staff, and reports. Platform owners control plans, features, and onboarding from a superadmin console.',
+    q: 'Can I manage multiple branches or outlets?',
+    a: 'LoftOS is multi-tenant: each outlet is an organization with its own branding, menu, staff, and reports. Platform owners control plans, features, and onboarding from a superadmin console.',
   },
   {
     q: 'Can staff have different permissions?',
@@ -376,6 +376,6 @@ export const clientLogos = [
   'Ember Kitchen',
   'Circuit Café',
   'PS Lounge 64',
-  'Arcadia Franchise',
+  'Arcadia Network',
   'Cue Club',
 ]

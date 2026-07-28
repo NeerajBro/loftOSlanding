@@ -5,11 +5,11 @@ import { SectionHeading } from './ui/Shared'
 const points = [
   {
     title: 'One owner, many outlets',
-    detail: 'Onboard each branch or franchisee as a tenant with its own slug, staff, and data.',
+    detail: 'Onboard each branch as a tenant with its own slug, staff, and data.',
   },
   {
     title: 'Unified branding control',
-    detail: 'Keep the franchise look consistent — or let each outlet run its own white-label identity.',
+    detail: 'Keep the brand look consistent — or let each outlet run its own white-label identity.',
   },
   {
     title: 'Centralized oversight',
@@ -29,7 +29,7 @@ export default function MultiBranch() {
         <SectionHeading
           light
           eyebrow="Multi-tenant growth"
-          title="Scale from one lounge to a franchise network"
+          title="Scale from one lounge to a multi-location network"
           subtitle="LoftOS was built multi-tenant from day one. Grow outlets without rebuilding software — or losing control of features, billing plans, and brand standards."
         />
         <div className="grid gap-4 sm:grid-cols-2">
