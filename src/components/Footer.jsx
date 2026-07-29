@@ -16,7 +16,7 @@ const columns = [
       { label: 'Gaming lounges', href: '#industries' },
       { label: 'Restaurants', href: '#industries' },
       { label: 'Cafés', href: '#industries' },
-      { label: 'Franchises', href: '#multi-branch' },
+      { label: 'Multi-location', href: '#multi-branch' },
     ],
   },
   {
