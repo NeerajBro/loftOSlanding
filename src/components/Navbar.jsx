@@ -5,6 +5,7 @@ import { Button } from './ui/Shared'
 
 const links = [
   { href: '#features', label: 'Features' },
+  { href: '#flows', label: 'How it works' },
   { href: '#white-label', label: 'White Label' },
   { href: '#industries', label: 'Industries' },
   { href: '#pricing', label: 'Pricing' },
