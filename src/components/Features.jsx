@@ -55,8 +55,9 @@ export default function Features() {
                   </div>
                 </div>
                 <h3 className="font-display text-xl font-bold text-ink dark:text-white">{f.title}</h3>
-                <p className="mt-2 text-sm font-medium text-slate-deep/80 dark:text-white/45">
-                  Solves: {f.problem}
+                <p className="mt-2 inline-flex items-start gap-1.5 text-xs font-semibold text-rose dark:text-rose/90">
+                  <span className="mt-0.5 h-1.5 w-1.5 shrink-0 rounded-full bg-rose" aria-hidden />
+                  {f.problem}
                 </p>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-slate dark:text-white/65">
                   {f.benefit}

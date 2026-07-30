@@ -1,56 +1,47 @@
 export const problems = [
   {
     title: 'Manual billing chaos',
-    description:
-      'Handwritten tickets and calculator math slow down checkout, create disputes, and leave money on the table every busy night.',
+    description: 'Handwritten tickets and calculator math slow checkout and leave money on the table.',
     icon: 'receipt',
   },
   {
     title: 'Paper inventory',
-    description:
-      'Stock counts live in notebooks. You discover shortages only after a customer order fails — or after stock walks out the door.',
+    description: 'Stock lives in notebooks. You learn about shortages only after an order fails.',
     icon: 'box',
   },
   {
     title: 'Zero live analytics',
-    description:
-      'Owners guess peak hours, top games, and food movers. Without numbers, pricing and staffing stay reactive instead of profitable.',
+    description: 'Owners guess peak hours and top movers — pricing stays reactive, not profitable.',
     icon: 'chart',
   },
   {
     title: 'Staff mistakes & leakage',
-    description:
-      'Wrong rates, forgotten add-ons, and open tabs without ownership quietly erode margins across gaming and food counters.',
+    description: 'Wrong rates, forgotten add-ons, and open tabs quietly erode margins.',
     icon: 'users',
   },
   {
     title: 'Paper menu only',
-    description:
-      'Guests pass around a paper menu with no live updates or app branding. Orders get delayed, tables turn slower, and kitchen tickets get messy.',
+    description: 'No live updates or branding. Orders delay, tables turn slower, kitchen gets messy.',
     icon: 'qr',
   },
   {
     title: 'Disconnected tools',
-    description:
-      'One app for sessions, another for food, spreadsheets for expenses. Nothing talks — so reports never tell the full story.',
+    description: 'Sessions in one app, food in another, expenses in sheets — reports never match.',
     icon: 'puzzle',
   },
   {
     title: 'Revenue leakage',
-    description:
-      'Untracked overtime, waived bills, and missed GST add up. Without audit trails, leakage looks like “a slow month.”',
+    description: 'Untracked overtime, waived bills, and missed GST look like “a slow month.”',
     icon: 'leak',
   },
   {
     title: 'Long queues',
-    description:
-      'Peak-hour bottlenecks at the counter kill the vibe. Guests leave when starting a session or settling a bill takes forever.',
+    description: 'Peak-hour bottlenecks at the counter kill the vibe — guests walk out.',
     icon: 'clock',
   },
   {
     title: 'No branch visibility',
-    description:
-      'Multi-location owners fly blind. Each outlet invents its own process with no unified branding or reporting.',
+    description: 'Multi-location owners fly blind. Each outlet invents its own process.',
     icon: 'branches',
   },
 ]
@@ -58,139 +49,147 @@ export const problems = [
 export const solutions = [
   {
     title: 'Gaming POS',
-    description: 'Start, pause, extend, and settle sessions with weekday/weekend rates, overtime, and food add-ons in one flow.',
+    description: 'Start, pause, extend, and settle sessions — rates, overtime, and food in one flow.',
+    icon: 'game',
   },
   {
     title: 'Restaurant POS',
-    description: 'Counter billing for takeaway, dine-in, and staff orders with discounts, GST, and printable branded receipts.',
+    description: 'Takeaway, dine-in, and staff orders with GST and branded receipts.',
+    icon: 'pos',
   },
   {
     title: 'Kitchen display',
-    description: 'Live order pipeline from QR and counter — pending to ready — so the kitchen never loses a ticket.',
+    description: 'Live QR + counter tickets from pending to ready — no lost slips.',
+    icon: 'kitchen',
   },
   {
     title: 'Smart inventory',
-    description: 'Every sale deducts stock automatically. Low-stock alerts and transaction history stop silent shrinkage.',
+    description: 'Auto stock deduction, low-stock alerts, and a full audit trail.',
+    icon: 'inventory',
   },
   {
     title: 'Staff permissions',
-    description: 'Role-based access with feature locks. Owners see everything; floor staff only touch what they need.',
+    description: 'Role-based access so floor staff only touch what they need.',
+    icon: 'staff',
   },
   {
     title: 'Analytics engine',
-    description: 'Revenue, games, stations, peak hours, food movers, and customer patterns — filtered by day, week, or custom range.',
+    description: 'Revenue, peak hours, stations, and food movers — by any date range.',
+    icon: 'analytics',
   },
   {
     title: 'Bookings & blocks',
-    description: 'Public slot bookings with capacity rules, plus admin block-outs so overbooking never ruins a night.',
+    description: 'Public slots with capacity rules and admin block-outs.',
+    icon: 'calendar',
   },
   {
     title: 'QR ordering',
-    description: 'Guests scan, browse, order, and track status live. Tables settle with discounts, GST, and payment modes.',
+    description: 'Guests scan, order, and track live. Settle with UPI, cash, or card.',
+    icon: 'qr',
   },
   {
     title: 'Expense tracking',
-    description: 'Credit and debit ledger tied to reports so profit isn’t a guess at month-end.',
+    description: 'Credit/debit ledger tied to reports so profit isn’t a guess.',
+    icon: 'expense',
   },
   {
     title: 'CRM & expansion leads',
-    description: 'Capture expansion inquiries from your website and work them through a simple pipeline with notes.',
+    description: 'Capture inquiries and move them through a simple pipeline.',
+    icon: 'crm',
   },
+]
+
+export const systemFlow = [
+  { title: 'Guest arrives', detail: 'Walk-in or QR table', icon: 'arrive' },
+  { title: 'Floor runs', detail: 'Session or food order', icon: 'run' },
+  { title: 'Kitchen syncs', detail: 'Live tickets & prep', icon: 'kitchen' },
+  { title: 'Checkout', detail: 'GST, pay, receipt', icon: 'checkout' },
+  { title: 'Owner sees', detail: 'Reports & stock', icon: 'owner' },
 ]
 
 export const featureCards = [
   {
     title: 'Gaming sessions',
     problem: 'Timers on phones and sticky notes lose money.',
-    benefit:
-      'Start sessions, pause billing, resume, extend minutes, or run open-ended play. Split game revenue, add food mid-session, and print branded receipts at checkout.',
+    benefit: 'Pause, resume, extend, or open-ended play. Add food mid-session and print branded receipts.',
     icon: 'game',
     tags: ['Pause / resume', 'Weekday & weekend rates', 'Split billing', 'Overtime'],
   },
   {
     title: 'Restaurant POS',
     problem: 'Separate food counters create messy reconciliations.',
-    benefit:
-      'Takeaway, dine-in, and staff orders from inventory-backed items. Apply discounts and GST, accept cash, UPI, or card — then print a clean counter receipt.',
+    benefit: 'Takeaway, dine-in, and staff orders with discounts, GST, and cash / UPI / card.',
     icon: 'pos',
     tags: ['Takeaway', 'Dine-in', 'Staff orders', 'GST ready'],
   },
   {
     title: 'Kitchen display',
     problem: 'Shouted orders and lost slips kill kitchen speed.',
-    benefit:
-      'Every QR and counter order lands on a live board with status history, prep ETAs, and customer notes until the plate is served.',
+    benefit: 'QR and counter orders on one live board — status, prep ETAs, and notes.',
     icon: 'kitchen',
     tags: ['Live pipeline', 'Prep ETAs', 'Status history'],
   },
   {
     title: 'Inventory that fights theft',
     problem: 'Stock disappears between “we had it” and “we’re out.”',
-    benefit:
-      'Automatic deduction on sale, restore on void/cancel, low-stock alerts, and a full transaction audit trail for every adjust.',
+    benefit: 'Auto deduct on sale, restore on void, low-stock alerts, and a full audit trail.',
     icon: 'inventory',
     tags: ['Auto deduct', 'Low-stock alerts', 'Audit trail'],
   },
   {
     title: 'Billing history & invoices',
     problem: 'Finding yesterday’s bill means digging through drawers.',
-    benefit:
-      'Search completed bills, export CSV, edit totals when needed, and void with inventory restore. Sequential invoice numbers per business.',
+    benefit: 'Search bills, export CSV, void with stock restore, and sequential invoice numbers.',
     icon: 'invoice',
     tags: ['CSV export', 'Invoice numbers', 'Void & restore'],
   },
   {
     title: 'Reports that drive decisions',
     problem: 'Spreadsheets that are always a week late.',
-    benefit:
-      'Know where every rupee comes from — game types, stations, peak hours, party size, food analytics, and expense-aware summaries.',
+    benefit: 'Game types, stations, peak hours, food movers, and expense-aware summaries.',
     icon: 'reports',
     tags: ['Peak hours', 'Top products', 'Station analytics'],
   },
   {
     title: 'Staff & feature control',
     problem: 'Everyone has the same access — or none at all.',
-    benefit:
-      'Owner, admin, manager, staff, and viewer roles. Enable or disable modules per plan and per person so growth stays controlled.',
+    benefit: 'Owner to viewer roles with module locks per plan and per person.',
     icon: 'staff',
     tags: ['Role permissions', 'Module flags', 'Attendance-ready'],
   },
   {
     title: 'Bookings & events',
     problem: 'WhatsApp booking threads don’t scale.',
-    benefit:
-      'Customers reserve gaming slots online. Host tournaments and restaurant events with public listings for your landing site.',
+    benefit: 'Online gaming slots, tournaments, and public event listings for your site.',
     icon: 'calendar',
     tags: ['Slot bookings', 'Slot blocks', 'Tournaments'],
   },
   {
     title: 'White-label branding',
     problem: 'Generic software makes your brand look rented.',
-    benefit:
-      'Your logo, colors, receipt header/footer, business name, and public menu identity — without building software from scratch.',
+    benefit: 'Your logo, colors, receipts, and menu identity — without custom software.',
     icon: 'brand',
     tags: ['Logo & colors', 'Custom receipts', 'Own domain ready'],
   },
   {
     title: 'Vendor & district sessions',
     problem: 'Partner bookings are priced ad-hoc and hard to track.',
-    benefit:
-      'Prepaid vendor session packs with guest extras for food — built for district partners and external organizers.',
+    benefit: 'Prepaid session packs for partners — guests still pay for food extras.',
     icon: 'vendor',
     tags: ['Vendor packs', 'Prepaid sessions'],
   },
 ]
 
 export const industries = [
-  { name: 'Gaming Lounge', blurb: 'Sessions, stations, food add-ons, and peak-hour control in one board.' },
-  { name: 'Restaurant', blurb: 'Counter POS, kitchen tickets, GST invoices, and inventory that stays honest.' },
-  { name: 'Café', blurb: 'QR menus, quick takeaway, and evening entertainment nights without tool sprawl.' },
-  { name: 'PlayStation Arena', blurb: 'Console stations with pause/resume timers and overtime that actually bills.' },
-  { name: 'Pool & Snooker Club', blurb: 'Table time, party size, and F&B tabs that settle cleanly at checkout.' },
-  { name: 'Esports Arena', blurb: 'Events, competitions, and high-throughput billing when the floor is packed.' },
-  { name: 'Food Court', blurb: 'Fast counter billing with stock alerts across high-velocity SKUs.' },
-  { name: 'Gaming Network', blurb: 'White-label tenants, feature plans, and expansion lead pipelines at scale.' },
-  { name: 'Entertainment Center', blurb: 'Games, food, bookings, and events under one operating system.' },
+  { name: 'Gaming Lounge', blurb: 'Sessions, stations, food add-ons, and peak-hour control.', icon: 'lounge' },
+  { name: 'Restaurant', blurb: 'Counter POS, kitchen tickets, GST, and honest inventory.', icon: 'restaurant' },
+  { name: 'Café', blurb: 'QR menus, takeaway, and entertainment nights in one tool.', icon: 'cafe' },
+  { name: 'PlayStation Arena', blurb: 'Console timers with pause/resume and overtime billing.', icon: 'console' },
+  { name: 'Pool & Snooker Club', blurb: 'Table time, party size, and F&B tabs at checkout.', icon: 'pool' },
+  { name: 'Esports Arena', blurb: 'Events and high-throughput billing when the floor is packed.', icon: 'esports' },
+  { name: 'Food Court', blurb: 'Fast counter billing with stock alerts on busy SKUs.', icon: 'foodcourt' },
+  { name: 'Gaming Network', blurb: 'White-label tenants, plans, and expansion pipelines.', icon: 'network' },
+  { name: 'Entertainment Center', blurb: 'Games, food, bookings, and events in one OS.', icon: 'center' },
 ]
 
 export const testimonials = [

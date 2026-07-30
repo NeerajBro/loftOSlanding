@@ -29,11 +29,11 @@ export default function App() {
         <ClientLogos />
         <Problem />
         <Solution />
+        <Flows />
         <Features />
         <WhiteLabel />
         <Industries />
         <Analytics />
-        <Flows />
         <MultiBranch />
         <Testimonials />
         <Statistics />
