@@ -10,7 +10,7 @@ const jsonLd = {
       logo: 'https://loftos.app/favicon.svg',
       description:
         'White-label multi-tenant SaaS for gaming cafés, restaurants, and entertainment centers.',
-      email: 'hello@loftos.app',
+      email: 'loft64venture@gmail.com',
     },
     {
       '@type': 'SoftwareApplication',

@@ -1,5 +1,6 @@
 import SEO from './components/SEO'
 import ScrollProgress from './components/ScrollProgress'
+import ScrollToHash from './components/ScrollToHash'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import ClientLogos from './components/ClientLogos'
@@ -23,6 +24,7 @@ export default function App() {
     <>
       <SEO />
       <ScrollProgress />
+      <ScrollToHash />
       <Navbar />
       <main>
         <Hero />

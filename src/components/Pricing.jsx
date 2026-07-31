@@ -315,17 +315,8 @@ export default function Pricing() {
             <h3 id="trial-success-title" className="font-display text-2xl font-bold">
               Trial account created!
             </h3>
-            <p className="mt-3 text-sm text-slate dark:text-white/75">
-              <strong>{successInfo.organizationName}</strong> is ready. Your workspace is separate
-              from other businesses — you start with a fresh POS, inventory, and session data.
-            </p>
-            {successInfo.slug ? (
-              <p className="mt-2 text-xs text-slate/80 dark:text-white/55">
-                Workspace ID: <code>{successInfo.slug}</code>
-              </p>
-            ) : null}
-            <p className="mt-4 text-sm text-slate dark:text-white/70">
-              Redirecting you to the POS in a moment…
+            <p className="mt-3 text-sm text-slate dark:text-white/70">
+              Redirecting in a moment…
             </p>
             <button
               type="button"

@@ -20,7 +20,7 @@ export default function FinalCTA() {
             live reports on a floor that looks like yours.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <Button href="mailto:hello@loftos.app?subject=LoftOS%20Demo" variant="primary">
+            <Button href="mailto:loft64venture@gmail.com?subject=LoftOS%20Demo" variant="primary">
               Book a free demo
             </Button>
             <Button href="#pricing" variant="secondary">

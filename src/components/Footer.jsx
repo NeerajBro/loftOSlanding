@@ -1,4 +1,4 @@
-import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
+import { FiInstagram, FiMail, FiPhone } from 'react-icons/fi'
 
 const columns = [
   {
@@ -31,10 +31,32 @@ const columns = [
   {
     title: 'Company',
     links: [
-      { label: 'Contact', href: 'mailto:hello@loftos.app' },
+      { label: 'Contact', href: '#contact' },
       { label: 'Book demo', href: '#demo' },
       { label: 'Start trial', href: '#pricing' },
     ],
+  },
+]
+
+const contactItems = [
+  {
+    Icon: FiInstagram,
+    label: 'Instagram',
+    href: 'https://www.instagram.com/loft64hq/',
+    text: '@loft64hq',
+    external: true,
+  },
+  {
+    Icon: FiPhone,
+    label: 'Phone',
+    href: 'tel:+919987762009',
+    text: '+91 9987762009',
+  },
+  {
+    Icon: FiMail,
+    label: 'Email',
+    href: 'mailto:loft64venture@gmail.com',
+    text: 'loft64venture@gmail.com',
   },
 ]
 
@@ -51,21 +73,30 @@ export default function Footer() {
               The complete white-label platform for gaming cafés, restaurants, and entertainment
               businesses.
             </p>
-            <div className="mt-5 flex gap-3">
-              {[
-                { Icon: FiTwitter, label: 'Twitter' },
-                { Icon: FiLinkedin, label: 'LinkedIn' },
-                { Icon: FiGithub, label: 'GitHub' },
-              ].map(({ Icon, label }) => (
-                <a
-                  key={label}
-                  href="#footer"
-                  aria-label={label}
-                  className="flex h-10 w-10 items-center justify-center rounded-xl border border-line text-slate transition hover:border-mint hover:text-mint-deep dark:border-line-dark dark:text-white/60"
-                >
-                  <Icon size={18} />
-                </a>
-              ))}
+
+            <div id="contact" className="mt-6">
+              <p className="text-xs font-bold uppercase tracking-wider text-ink dark:text-white">
+                Contact us
+              </p>
+              <ul className="mt-3 space-y-2.5">
+                {contactItems.map(({ Icon, label, href, text, external }) => (
+                  <li key={label}>
+                    <a
+                      href={href}
+                      aria-label={label}
+                      {...(external
+                        ? { target: '_blank', rel: 'noopener noreferrer' }
+                        : {})}
+                      className="inline-flex items-center gap-2.5 text-sm text-slate transition hover:text-ink dark:text-white/55 dark:hover:text-white"
+                    >
+                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-line dark:border-line-dark">
+                        <Icon size={15} />
+                      </span>
+                      {text}
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
 
