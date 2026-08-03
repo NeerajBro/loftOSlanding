@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion'
+import { useTrialSignup } from '../context/TrialSignupContext'
 import { Button } from './ui/Shared'
 
 export default function FinalCTA() {
+  const { openTrialSignup } = useTrialSignup()
+
   return (
     <section id="demo" className="relative overflow-hidden py-20 lg:py-28">
       <div className="absolute inset-0 gradient-mesh" />
@@ -20,7 +23,14 @@ export default function FinalCTA() {
             live reports on a floor that looks like yours.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <Button href="mailto:loft64venture@gmail.com?subject=LoftOS%20Demo" variant="primary">
+            <Button
+              href="#trial"
+              variant="primary"
+              onClick={(e) => {
+                e.preventDefault()
+                openTrialSignup()
+              }}
+            >
               Book a free demo
             </Button>
             <Button href="#pricing" variant="secondary">

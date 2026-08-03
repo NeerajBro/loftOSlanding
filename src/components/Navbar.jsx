@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { FiMenu, FiMoon, FiSun, FiX } from 'react-icons/fi'
 import { useTheme } from '../context/ThemeContext'
+import { useTrialSignup } from '../context/TrialSignupContext'
 import { Button } from './ui/Shared'
 
 const links = [
@@ -14,6 +15,7 @@ const links = [
 
 export default function Navbar() {
   const { theme, toggle } = useTheme()
+  const { openTrialSignup } = useTrialSignup()
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
 
@@ -63,7 +65,15 @@ export default function Navbar() {
             {theme === 'dark' ? <FiSun size={18} /> : <FiMoon size={18} />}
           </button>
           <div className="hidden sm:block">
-            <Button href="#demo" variant="primary" className="!py-2.5 !text-xs">
+            <Button
+              href="#trial"
+              variant="primary"
+              className="!py-2.5 !text-xs"
+              onClick={(e) => {
+                e.preventDefault()
+                openTrialSignup()
+              }}
+            >
               Book free demo
             </Button>
           </div>
@@ -91,7 +101,15 @@ export default function Navbar() {
                 {l.label}
               </a>
             ))}
-            <Button href="#demo" variant="primary" onClick={() => setOpen(false)}>
+            <Button
+              href="#trial"
+              variant="primary"
+              onClick={(e) => {
+                e.preventDefault()
+                setOpen(false)
+                openTrialSignup()
+              }}
+            >
               Book free demo
             </Button>
           </div>

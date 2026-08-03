@@ -1,4 +1,5 @@
 import { FiInstagram, FiMail, FiPhone } from 'react-icons/fi'
+import { useTrialSignup } from '../context/TrialSignupContext'
 
 const columns = [
   {
@@ -32,8 +33,8 @@ const columns = [
     title: 'Company',
     links: [
       { label: 'Contact', href: '#contact' },
-      { label: 'Book demo', href: '#demo' },
-      { label: 'Start trial', href: '#pricing' },
+      { label: 'Book demo', href: '#trial', trial: true },
+      { label: 'Start trial', href: '#trial', trial: true },
     ],
   },
 ]
@@ -61,6 +62,8 @@ const contactItems = [
 ]
 
 export default function Footer() {
+  const { openTrialSignup } = useTrialSignup()
+
   return (
     <footer id="footer" className="border-t border-line bg-foam pb-10 pt-16 dark:border-line-dark dark:bg-ink">
       <div className="section-pad container-page">
@@ -112,6 +115,14 @@ export default function Footer() {
                       <a
                         href={l.href}
                         className="text-sm text-slate transition hover:text-ink dark:text-white/55 dark:hover:text-white"
+                        onClick={
+                          l.trial
+                            ? (e) => {
+                                e.preventDefault()
+                                openTrialSignup()
+                              }
+                            : undefined
+                        }
                       >
                         {l.label}
                       </a>

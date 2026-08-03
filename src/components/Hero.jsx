@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { FiPlay } from 'react-icons/fi'
+import { useTrialSignup } from '../context/TrialSignupContext'
 import { Button } from './ui/Shared'
 
 const floatCards = [
@@ -11,6 +12,8 @@ const floatCards = [
 ]
 
 export default function Hero() {
+  const { openTrialSignup } = useTrialSignup()
+
   return (
     <section id="top" className="relative min-h-screen overflow-hidden gradient-mesh pt-24 pb-16 lg:pt-28">
       <div className="pointer-events-none absolute inset-0 bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2240%22 height=%2240%22><path d=%22M40 0H0V40%22 fill=%22none%22 stroke=%22rgba(255,255,255,0.03)%22 stroke-width=%221%22/></svg>')]" />
@@ -60,10 +63,24 @@ export default function Hero() {
             transition={{ duration: 0.55, delay: 0.28 }}
             className="mt-8 flex flex-wrap items-center gap-3"
           >
-            <Button href="#demo" variant="primary">
+            <Button
+              href="#trial"
+              variant="primary"
+              onClick={(e) => {
+                e.preventDefault()
+                openTrialSignup()
+              }}
+            >
               Book free demo
             </Button>
-            <Button href="#pricing" variant="secondary">
+            <Button
+              href="#trial"
+              variant="secondary"
+              onClick={(e) => {
+                e.preventDefault()
+                openTrialSignup()
+              }}
+            >
               Start free trial
             </Button>
             <a
