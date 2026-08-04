@@ -48,9 +48,19 @@ export const problems = [
 
 export const solutions = [
   {
-    title: 'Gaming POS',
+    title: 'Gaming café POS',
     description: 'Start, pause, extend, and settle sessions — rates, overtime, and food in one flow.',
     icon: 'game',
+  },
+  {
+    title: 'Lounge bookings',
+    description: 'Online slot booking for gaming lounges with capacity rules and block-outs.',
+    icon: 'calendar',
+  },
+  {
+    title: 'Memberships',
+    description: 'Sell memberships and prepaid packs, track visits, and seat members faster.',
+    icon: 'crm',
   },
   {
     title: 'Restaurant POS',
@@ -78,11 +88,6 @@ export const solutions = [
     icon: 'analytics',
   },
   {
-    title: 'Bookings & blocks',
-    description: 'Public slots with capacity rules and admin block-outs.',
-    icon: 'calendar',
-  },
-  {
     title: 'QR ordering',
     description: 'Guests scan, order, and track live. Settle with UPI, cash, or card.',
     icon: 'qr',
@@ -91,11 +96,6 @@ export const solutions = [
     title: 'Expense tracking',
     description: 'Credit/debit ledger tied to reports so profit isn’t a guess.',
     icon: 'expense',
-  },
-  {
-    title: 'CRM & expansion leads',
-    description: 'Capture inquiries and move them through a simple pipeline.',
-    icon: 'crm',
   },
 ]
 
@@ -109,11 +109,28 @@ export const systemFlow = [
 
 export const featureCards = [
   {
-    title: 'Gaming sessions',
+    title: 'Gaming café sessions',
     problem: 'Timers on phones and sticky notes lose money.',
-    benefit: 'Pause, resume, extend, or open-ended play. Add food mid-session and print branded receipts.',
+    benefit:
+      'Purpose-built gaming café software: pause, resume, extend, or open-ended play. Add food mid-session and print branded receipts.',
     icon: 'game',
     tags: ['Pause / resume', 'Weekday & weekend rates', 'Split billing', 'Overtime'],
+  },
+  {
+    title: 'Lounge booking software',
+    problem: 'WhatsApp booking threads don’t scale.',
+    benefit:
+      'Booking software for gaming lounges with public slots, capacity rules, admin block-outs, tournaments, and event listings.',
+    icon: 'calendar',
+    tags: ['Slot bookings', 'Capacity rules', 'Tournaments', 'Block-outs'],
+  },
+  {
+    title: 'Membership management',
+    problem: 'Walk-ins never become regulars without a clear membership system.',
+    benefit:
+      'Membership management software for prepaid packs, member check-in at sessions, visit history, and partner vendor packs.',
+    icon: 'vendor',
+    tags: ['Memberships', 'Prepaid packs', 'Visit history', 'Partner packs'],
   },
   {
     title: 'Restaurant POS',
@@ -158,38 +175,36 @@ export const featureCards = [
     tags: ['Role permissions', 'Module flags', 'Attendance-ready'],
   },
   {
-    title: 'Bookings & events',
-    problem: 'WhatsApp booking threads don’t scale.',
-    benefit: 'Online gaming slots, tournaments, and public event listings for your site.',
-    icon: 'calendar',
-    tags: ['Slot bookings', 'Slot blocks', 'Tournaments'],
-  },
-  {
     title: 'White-label branding',
     problem: 'Generic software makes your brand look rented.',
     benefit: 'Your logo, colors, receipts, and menu identity — without custom software.',
     icon: 'brand',
     tags: ['Logo & colors', 'Custom receipts', 'Own domain ready'],
   },
-  {
-    title: 'Vendor & district sessions',
-    problem: 'Partner bookings are priced ad-hoc and hard to track.',
-    benefit: 'Prepaid session packs for partners — guests still pay for food extras.',
-    icon: 'vendor',
-    tags: ['Vendor packs', 'Prepaid sessions'],
-  },
 ]
 
 export const industries = [
-  { name: 'Gaming Lounge', blurb: 'Sessions, stations, food add-ons, and peak-hour control.', icon: 'lounge' },
+  {
+    name: 'Gaming Café',
+    blurb: 'Gaming café software for sessions, stations, food tabs, and peak-hour billing control.',
+    icon: 'lounge',
+  },
+  {
+    name: 'Gaming Lounge',
+    blurb: 'Booking software for gaming lounges — online slots, walk-ins, and station checkout.',
+    icon: 'console',
+  },
+  {
+    name: 'Membership Clubs',
+    blurb: 'Membership management software for prepaid packs, repeat guests, and member check-in.',
+    icon: 'network',
+  },
+  { name: 'PlayStation Arena', blurb: 'Console timers with pause/resume and overtime billing.', icon: 'esports' },
   { name: 'Restaurant', blurb: 'Counter POS, kitchen tickets, GST, and honest inventory.', icon: 'restaurant' },
   { name: 'Café', blurb: 'QR menus, takeaway, and entertainment nights in one tool.', icon: 'cafe' },
-  { name: 'PlayStation Arena', blurb: 'Console timers with pause/resume and overtime billing.', icon: 'console' },
   { name: 'Pool & Snooker Club', blurb: 'Table time, party size, and F&B tabs at checkout.', icon: 'pool' },
-  { name: 'Esports Arena', blurb: 'Events and high-throughput billing when the floor is packed.', icon: 'esports' },
-  { name: 'Food Court', blurb: 'Fast counter billing with stock alerts on busy SKUs.', icon: 'foodcourt' },
-  { name: 'Gaming Network', blurb: 'White-label tenants, plans, and expansion pipelines.', icon: 'network' },
-  { name: 'Entertainment Center', blurb: 'Games, food, bookings, and events in one OS.', icon: 'center' },
+  { name: 'Esports Arena', blurb: 'Events and high-throughput billing when the floor is packed.', icon: 'center' },
+  { name: 'Entertainment Center', blurb: 'Games, food, bookings, memberships, and events in one OS.', icon: 'foodcourt' },
 ]
 
 export const testimonials = [
@@ -231,7 +246,7 @@ export const pricingPlans = [
     period: '/month',
     description: 'For single-location lounges getting off paper billing.',
     features: [
-      'Gaming sessions & rates',
+      'Gaming café sessions & rates',
       'Restaurant counter POS',
       'Inventory + low-stock alerts',
       'Billing history & receipts',
@@ -268,7 +283,8 @@ export const pricingPlans = [
     description: 'For multi-location and multi-tenant entertainment brands.',
     features: [
       'Everything in Pro',
-      'Slot bookings & block-outs',
+      'Lounge slot bookings & block-outs',
+      'Membership & prepaid packs',
       'Public events management',
       'Expansion inquiry CRM',
       'Feature flags per tenant',
@@ -283,7 +299,19 @@ export const pricingPlans = [
 export const faqs = [
   {
     q: 'What is LoftOS?',
-    a: 'LoftOS is a white-label, multi-tenant operating system for gaming cafés, PlayStation lounges, restaurants, and entertainment centers — covering sessions, POS, QR ordering, inventory, staff, bookings, and reports.',
+    a: 'LoftOS is gaming café software and a white-label multi-tenant OS for PlayStation lounges, restaurants, and entertainment centers — covering sessions, lounge bookings, membership management, POS, QR ordering, inventory, staff, and reports.',
+  },
+  {
+    q: 'Is LoftOS gaming café software?',
+    a: 'Yes. LoftOS is built as gaming café software: timed play sessions with start/pause/resume, weekday and weekend rates, overtime, food add-ons, GST, and printable branded receipts for lounges and arenas.',
+  },
+  {
+    q: 'Do you offer booking software for gaming lounges?',
+    a: 'Yes. LoftOS includes booking software for gaming lounges — public slot booking with capacity and open hours, admin confirm/cancel flows, slot block-outs, tournaments, and public event listings.',
+  },
+  {
+    q: 'Does LoftOS include membership management software?',
+    a: 'Yes. Use membership management for prepaid packs, partner/vendor session packs, member check-in into gaming sessions, and visit-aware billing so regulars and groups are easier to recognize and settle.',
   },
   {
     q: 'What is a gaming POS?',

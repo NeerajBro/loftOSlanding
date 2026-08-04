@@ -47,7 +47,7 @@ export default function FAQ() {
         <SectionHeading
           eyebrow="FAQ"
           title="Answers owners ask before they switch"
-          subtitle="Straight answers on gaming POS, QR ordering, white-label branding, GST, permissions, and multi-tenant growth."
+          subtitle="Straight answers on gaming café software, lounge bookings, membership management, QR ordering, GST, and white-label growth."
         />
         <div className="rounded-3xl border border-line bg-foam px-5 sm:px-8 dark:border-line-dark dark:bg-ink-soft">
           {faqs.map((item, i) => (

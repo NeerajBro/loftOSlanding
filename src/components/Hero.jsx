@@ -35,7 +35,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.08 }}
             className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-mint"
           >
-            The complete gaming, café & restaurant management platform
+            Gaming café software for lounges & entertainment floors
           </motion.p>
 
           <motion.h1
@@ -44,7 +44,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.12 }}
             className="font-display text-3xl font-bold leading-[1.12] tracking-tight text-white sm:text-4xl lg:text-[2.75rem]"
           >
-            Run your entertainment business from one white-label platform
+            Sessions, lounge bookings, and memberships — one white-label OS
           </motion.h1>
 
           <motion.p
@@ -53,8 +53,8 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-5 max-w-xl text-base leading-relaxed text-white/70 sm:text-lg"
           >
-            Manage gaming sessions, restaurant billing, QR ordering, inventory, reports, staff, and
-            bookings — with your logo, colors, receipts, and data isolation built in.
+            LoftOS is gaming café software with booking tools for gaming lounges and membership
+            management — plus restaurant POS, QR ordering, inventory, and reports under your brand.
           </motion.p>
 
           <motion.div

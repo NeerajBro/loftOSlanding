@@ -1,0 +1,30 @@
+# LoftOS
+
+> White-label gaming café software for gaming lounges, PlayStation arenas, cafés, and entertainment centers.
+
+## Product
+LoftOS is a multi-tenant operating system that combines gaming session billing, booking software for gaming lounges, membership management, restaurant POS, QR ordering, kitchen display, inventory, staff permissions, and analytics.
+
+## Primary audiences
+- Gaming café and PlayStation lounge owners
+- Esports and entertainment venue operators
+- Café and restaurant floors attached to gaming spaces
+- Multi-location / white-label entertainment networks
+
+## Core capabilities
+- Gaming café software: start, pause, extend, and settle timed sessions with food add-ons, overtime, GST, and branded receipts
+- Booking software for gaming lounges: public slot bookings, capacity rules, admin block-outs, tournaments, and events
+- Membership management software: memberships, prepaid packs, guest profiles, and repeat-visit workflows at checkout
+- Restaurant POS, QR menus, kitchen display, inventory audit trail, expense ledger, and multi-branch control
+
+## Pricing (INR)
+- Starter: ₹2,999/month
+- Pro: ₹5,999/month
+- Business: ₹9,999/month
+- 14-day free trial available
+
+## Contact
+- Website: https://loftos.loftsixtyfour.com/
+- Email: loft64venture@gmail.com
+- Phone: +91 9987762009
+- Instagram: https://www.instagram.com/loft64hq/

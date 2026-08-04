@@ -31,8 +31,8 @@ export default function Problem() {
       <div className="section-pad container-page">
         <SectionHeading
           eyebrow="The problem"
-          title="Running an entertainment business shouldn’t feel like juggling five broken tools"
-          subtitle="Most lounges and cafés still stitch together timers, paper menus, WhatsApp bookings, and guesswork — and lose money in the gaps."
+          title="Running a gaming café shouldn’t mean five broken tools"
+          subtitle="Most lounges still stitch together phone timers, WhatsApp bookings, paper memberships, and guesswork — and lose money in the gaps."
         />
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

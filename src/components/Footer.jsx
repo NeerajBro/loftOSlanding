@@ -14,9 +14,9 @@ const columns = [
   {
     title: 'Industries',
     links: [
-      { label: 'Gaming lounges', href: '#industries' },
-      { label: 'Restaurants', href: '#industries' },
-      { label: 'Cafés', href: '#industries' },
+      { label: 'Gaming cafés', href: '#industries' },
+      { label: 'Lounge bookings', href: '#features' },
+      { label: 'Memberships', href: '#features' },
       { label: 'Multi-location', href: '#multi-branch' },
     ],
   },
@@ -73,8 +73,8 @@ export default function Footer() {
               Loft<span className="text-mint-deep dark:text-mint">OS</span>
             </a>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-slate dark:text-white/55">
-              The complete white-label platform for gaming cafés, restaurants, and entertainment
-              businesses.
+              Gaming café software with lounge booking tools and membership management — white-label
+              for restaurants and entertainment businesses.
             </p>
 
             <div id="contact" className="mt-6">
@@ -136,7 +136,7 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col gap-2 border-t border-line pt-6 text-xs text-slate dark:border-line-dark dark:text-white/40 sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} LoftOS. All rights reserved.</p>
-          <p>Built for gaming floors, cafés, and restaurant operations.</p>
+          <p>Built for gaming cafés, lounge bookings, and membership-led floors.</p>
         </div>
       </div>
     </footer>

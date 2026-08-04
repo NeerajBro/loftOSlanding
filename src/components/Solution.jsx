@@ -43,8 +43,8 @@ export default function Solution() {
         <SectionHeading
           light
           eyebrow="The solution"
-          title="One operating system for gaming, food, and floor operations"
-          subtitle="LoftOS replaces fragmented tools with a single white-label platform — faster billing, honest stock, clear ownership."
+          title="Gaming café software that also runs bookings and memberships"
+          subtitle="LoftOS replaces fragmented timers, WhatsApp bookings, and spreadsheets with one white-label platform for lounges, cafés, and food floors."
         />
 
         {/* High-level system flow diagram */}

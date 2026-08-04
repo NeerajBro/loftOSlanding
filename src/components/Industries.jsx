@@ -31,8 +31,8 @@ export default function Industries() {
       <div className="section-pad container-page">
         <SectionHeading
           eyebrow="Industries"
-          title="Purpose-built for entertainment-first businesses"
-          subtitle="Whether you sell table time, console sessions, coffee, or full-service dining — LoftOS fits the floor you run."
+          title="Built for gaming cafés, lounges, and member-driven floors"
+          subtitle="From gaming café software to lounge booking and membership management — LoftOS fits how entertainment venues actually sell time and food."
         />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {industries.map((ind, i) => {

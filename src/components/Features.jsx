@@ -34,7 +34,7 @@ export default function Features() {
         <SectionHeading
           eyebrow="Feature showcase"
           title="Built for the floor — not just the back office"
-          subtitle="Every module is designed around real entertainment workflows: timed play, kitchen pressure, multi-location branding, and rupee-level accountability."
+          subtitle="Gaming café sessions, lounge booking software, membership management, kitchen pressure, and rupee-level accountability in one stack."
         />
 
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">

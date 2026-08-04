@@ -36,4 +36,4 @@ src/
   hooks/          # Intersection observer helpers
 ```
 
-Update canonical URL / OG image hosts in `index.html` and `src/components/SEO.jsx` before production deploy.
+Update canonical URL / OG image hosts in `index.html` and `src/components/SEO.jsx` before production deploy (currently `https://loftos.loftsixtyfour.com`).

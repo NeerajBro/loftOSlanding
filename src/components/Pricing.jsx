@@ -24,7 +24,7 @@ export default function Pricing() {
         <SectionHeading
           eyebrow="Pricing"
           title="Plans that grow with your floor"
-          subtitle="Start with sessions and POS. Unlock analytics, vendors, bookings, events, and multi-location tools as you scale."
+          subtitle="Start with gaming café sessions and POS. Unlock analytics, lounge bookings, memberships, events, and multi-location tools as you scale."
         />
 
         <div className="grid gap-5 lg:grid-cols-3">
@@ -107,11 +107,11 @@ export default function Pricing() {
             </thead>
             <tbody className="divide-y divide-line bg-foam dark:divide-line-dark dark:bg-ink-soft">
               {[
-                ['Gaming + Restaurant POS', true, true, true],
+                ['Gaming café + Restaurant POS', true, true, true],
                 ['Inventory & billing history', true, true, true],
                 ['Reports & expenses', false, true, true],
-                ['Vendor sessions', false, true, true],
-                ['Slot bookings & events', false, false, true],
+                ['Memberships & prepaid packs', false, true, true],
+                ['Lounge bookings & events', false, false, true],
                 ['Expansion inquiry CRM', false, false, true],
               ].map(([name, a, b, c]) => (
                 <tr key={name}>

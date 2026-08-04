@@ -16,11 +16,11 @@ export default function FinalCTA() {
           className="mx-auto max-w-3xl text-center"
         >
           <h2 className="font-display text-3xl font-bold tracking-tight text-white sm:text-5xl">
-            Ready to modernize your business?
+            Ready to run your gaming café on one OS?
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-base text-white/70 sm:text-lg">
-            Book a free demo and see gaming sessions, QR kitchen flow, white-label branding, and
-            live reports on a floor that looks like yours.
+            Book a free demo and see gaming café sessions, lounge bookings, membership check-in, QR
+            kitchen flow, and live reports on a floor that looks like yours.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <Button
