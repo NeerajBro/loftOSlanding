@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { useTrialSignup } from '../context/TrialSignupContext'
 
 const THANK_YOU_MESSAGE =
-  'Thank you for your interest in LoftOS. We got your request and will activate your account within 24 hours. and you can access your account from the login page. details will be sent to your email address.'
+  'Thank you for your interest in LoftOS. Your account has been created. Please check your email for the activation link. Click that link to activate your account, then sign in  to start your free trial.'
 
 export default function TrialSignupModal() {
   const { open, closeTrialSignup } = useTrialSignup()
@@ -94,7 +94,7 @@ export default function TrialSignupModal() {
             ✓
           </div>
           <h3 id="trial-success-title" className="font-display text-2xl font-bold">
-            Request received
+            Check your email
           </h3>
           <p className="mt-3 text-sm leading-relaxed text-slate dark:text-white/70">
             {THANK_YOU_MESSAGE}
@@ -123,7 +123,7 @@ export default function TrialSignupModal() {
           Start Your 14-Day Free Trial
         </h3>
         <p className="mt-2 text-sm text-slate dark:text-white/70">
-          Create your trial account to access LoftOS. We will activate your account within 24 hours.
+          Create your trial account. We will send an activation link to your email so you can start your free trial.
         </p>
 
         {error ? (
