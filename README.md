@@ -36,4 +36,16 @@ src/
   hooks/          # Intersection observer helpers
 ```
 
+## Blog
+
+SEO guides live at `/blog` (React Router + Helmet):
+
+- `/blog/gaming-cafe-software`
+- `/blog/menu-management-software`
+- `/blog/qr-menu-management-software`
+
+Content source: `src/data/blogPosts.js`
+
+For production hosting, configure SPA fallback so `/blog/*` serves `index.html` (included `public/_redirects` for Netlify-style hosts; nginx: `try_files $uri $uri/ /index.html;`).
+
 Update canonical URL / OG image hosts in `index.html` and `src/components/SEO.jsx` before production deploy (currently `https://loftos.loftsixtyfour.com`).

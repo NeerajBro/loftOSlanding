@@ -1,23 +1,26 @@
 import { useEffect, useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import { FiMenu, FiMoon, FiSun, FiX } from 'react-icons/fi'
 import { useTheme } from '../context/ThemeContext'
 import { useTrialSignup } from '../context/TrialSignupContext'
 import { Button } from './ui/Shared'
 
-const links = [
-  { href: '#features', label: 'Features' },
-  { href: '#flows', label: 'How it works' },
-  { href: '#white-label', label: 'White Label' },
-  { href: '#industries', label: 'Industries' },
-  { href: '#pricing', label: 'Pricing' },
-  { href: '#faq', label: 'FAQ' },
+const sectionLinks = [
+  { href: '/#features', label: 'Features' },
+  { href: '/#flows', label: 'How it works' },
+  { href: '/#white-label', label: 'White Label' },
+  { href: '/#industries', label: 'Industries' },
+  { href: '/#pricing', label: 'Pricing' },
+  { href: '/#faq', label: 'FAQ' },
 ]
 
 export default function Navbar() {
   const { theme, toggle } = useTheme()
   const { openTrialSignup } = useTrialSignup()
+  const { pathname } = useLocation()
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
+  const onHome = pathname === '/'
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24)
@@ -25,26 +28,30 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  useEffect(() => {
+    setOpen(false)
+  }, [pathname])
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled
+        scrolled || !onHome
           ? 'border-b border-white/10 bg-ink/80 backdrop-blur-xl dark:bg-ink/85'
           : 'bg-transparent'
       }`}
     >
       <nav className="section-pad container-page flex h-16 items-center justify-between lg:h-18">
-        <a href="#top" className="group flex items-center gap-2.5" aria-label="LoftOS home">
+        <Link to="/" className="group flex items-center gap-2.5" aria-label="LoftOS home">
           <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-mint to-cyan font-display text-sm font-bold text-ink shadow-lg shadow-mint/20">
             L
           </span>
           <span className="font-display text-lg font-bold tracking-tight text-white">
             Loft<span className="text-mint">OS</span>
           </span>
-        </a>
+        </Link>
 
         <div className="hidden items-center gap-8 md:flex">
-          {links.map((l) => (
+          {sectionLinks.map((l) => (
             <a
               key={l.href}
               href={l.href}
@@ -53,6 +60,14 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
+          <Link
+            to="/blog"
+            className={`text-sm font-medium transition hover:text-white ${
+              pathname.startsWith('/blog') ? 'text-white' : 'text-white/70'
+            }`}
+          >
+            Blog
+          </Link>
         </div>
 
         <div className="flex items-center gap-2">
@@ -91,7 +106,7 @@ export default function Navbar() {
       {open && (
         <div className="border-t border-white/10 bg-ink/95 px-5 py-4 backdrop-blur-xl md:hidden">
           <div className="flex flex-col gap-3">
-            {links.map((l) => (
+            {sectionLinks.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
@@ -101,6 +116,13 @@ export default function Navbar() {
                 {l.label}
               </a>
             ))}
+            <Link
+              to="/blog"
+              onClick={() => setOpen(false)}
+              className="rounded-lg px-3 py-2 text-sm font-medium text-white/80 hover:bg-white/5"
+            >
+              Blog
+            </Link>
             <Button
               href="#trial"
               variant="primary"

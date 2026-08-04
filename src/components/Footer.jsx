@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { FiInstagram, FiMail, FiPhone } from 'react-icons/fi'
 import { useTrialSignup } from '../context/TrialSignupContext'
 
@@ -5,34 +6,34 @@ const columns = [
   {
     title: 'Product',
     links: [
-      { label: 'Features', href: '#features' },
-      { label: 'White label', href: '#white-label' },
-      { label: 'Pricing', href: '#pricing' },
-      { label: 'Analytics', href: '#analytics' },
+      { label: 'Features', href: '/#features' },
+      { label: 'White label', href: '/#white-label' },
+      { label: 'Pricing', href: '/#pricing' },
+      { label: 'Analytics', href: '/#analytics' },
     ],
   },
   {
     title: 'Industries',
     links: [
-      { label: 'Gaming cafés', href: '#industries' },
-      { label: 'Lounge bookings', href: '#features' },
-      { label: 'Memberships', href: '#features' },
-      { label: 'Multi-location', href: '#multi-branch' },
+      { label: 'Gaming cafés', href: '/#industries' },
+      { label: 'Lounge bookings', href: '/#features' },
+      { label: 'Memberships', href: '/#features' },
+      { label: 'Multi-location', href: '/#multi-branch' },
     ],
   },
   {
     title: 'Resources',
     links: [
-      { label: 'FAQ', href: '#faq' },
-      { label: 'Blog', href: '#faq' },
-      { label: 'Privacy', href: '#footer' },
-      { label: 'Terms', href: '#footer' },
+      { label: 'FAQ', href: '/#faq' },
+      { label: 'Blog', to: '/blog' },
+      { label: 'Gaming café software', to: '/blog/gaming-cafe-software' },
+      { label: 'QR menu guide', to: '/blog/qr-menu-management-software' },
     ],
   },
   {
     title: 'Company',
     links: [
-      { label: 'Contact', href: '#contact' },
+      { label: 'Contact', href: '/#contact' },
       { label: 'Book demo', href: '#trial', trial: true },
       { label: 'Start trial', href: '#trial', trial: true },
     ],
@@ -69,9 +70,9 @@ export default function Footer() {
       <div className="section-pad container-page">
         <div className="grid gap-10 md:grid-cols-[1.2fr_2fr]">
           <div>
-            <a href="#top" className="font-display text-2xl font-bold text-ink dark:text-white">
+            <Link to="/" className="font-display text-2xl font-bold text-ink dark:text-white">
               Loft<span className="text-mint-deep dark:text-mint">OS</span>
-            </a>
+            </Link>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-slate dark:text-white/55">
               Gaming café software with lounge booking tools and membership management — white-label
               for restaurants and entertainment businesses.
@@ -112,20 +113,29 @@ export default function Footer() {
                 <ul className="mt-4 space-y-2.5">
                   {col.links.map((l) => (
                     <li key={l.label}>
-                      <a
-                        href={l.href}
-                        className="text-sm text-slate transition hover:text-ink dark:text-white/55 dark:hover:text-white"
-                        onClick={
-                          l.trial
-                            ? (e) => {
-                                e.preventDefault()
-                                openTrialSignup()
-                              }
-                            : undefined
-                        }
-                      >
-                        {l.label}
-                      </a>
+                      {l.to ? (
+                        <Link
+                          to={l.to}
+                          className="text-sm text-slate transition hover:text-ink dark:text-white/55 dark:hover:text-white"
+                        >
+                          {l.label}
+                        </Link>
+                      ) : (
+                        <a
+                          href={l.href}
+                          className="text-sm text-slate transition hover:text-ink dark:text-white/55 dark:hover:text-white"
+                          onClick={
+                            l.trial
+                              ? (e) => {
+                                  e.preventDefault()
+                                  openTrialSignup()
+                                }
+                              : undefined
+                          }
+                        >
+                          {l.label}
+                        </a>
+                      )}
                     </li>
                   ))}
                 </ul>

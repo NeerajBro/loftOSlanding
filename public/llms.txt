@@ -23,6 +23,11 @@ LoftOS is a multi-tenant operating system that combines gaming session billing, 
 - Business: ₹9,999/month
 - 14-day free trial available
 
+## Blog guides
+- Gaming café software: https://loftos.loftsixtyfour.com/blog/gaming-cafe-software
+- Menu management software: https://loftos.loftsixtyfour.com/blog/menu-management-software
+- QR menu management software: https://loftos.loftsixtyfour.com/blog/qr-menu-management-software
+
 ## Contact
 - Website: https://loftos.loftsixtyfour.com/
 - Email: loft64venture@gmail.com

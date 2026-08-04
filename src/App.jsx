@@ -1,49 +1,18 @@
-import SEO from './components/SEO'
-import ScrollProgress from './components/ScrollProgress'
-import ScrollToHash from './components/ScrollToHash'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import ClientLogos from './components/ClientLogos'
-import Problem from './components/Problem'
-import Solution from './components/Solution'
-import Features from './components/Features'
-import WhiteLabel from './components/WhiteLabel'
-import Industries from './components/Industries'
-import Analytics from './components/Analytics'
-import Flows from './components/Flows'
-import MultiBranch from './components/MultiBranch'
-import Testimonials from './components/Testimonials'
-import Statistics from './components/Statistics'
-import Pricing from './components/Pricing'
-import FAQ from './components/FAQ'
-import FinalCTA from './components/FinalCTA'
-import Footer from './components/Footer'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import ScrollToTop from './components/ScrollToTop'
+import HomePage from './pages/HomePage'
+import BlogIndex from './pages/BlogIndex'
+import BlogPost from './pages/BlogPost'
 
 export default function App() {
   return (
-    <>
-      <SEO />
-      <ScrollProgress />
-      <ScrollToHash />
-      <Navbar />
-      <main>
-        <Hero />
-        <ClientLogos />
-        <Problem />
-        <Solution />
-        <Flows />
-        <Features />
-        <WhiteLabel />
-        <Industries />
-        <Analytics />
-        <MultiBranch />
-        <Testimonials />
-        <Statistics />
-        <Pricing />
-        <FAQ />
-        <FinalCTA />
-      </main>
-      <Footer />
-    </>
+    <BrowserRouter>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/blog" element={<BlogIndex />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
