@@ -1,4 +1,4 @@
-User-agent: *
+﻿User-agent: *
 Allow: /
 
 User-agent: GPTBot
@@ -19,4 +19,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://loftos.loftsixtyfour.com/sitemap.xml
+Sitemap: https://loftpos.com/sitemap.xml

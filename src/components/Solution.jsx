@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+﻿import { motion } from 'framer-motion'
 import {
   FiCalendar,
   FiCpu,
@@ -44,7 +44,7 @@ export default function Solution() {
           light
           eyebrow="The solution"
           title="Gaming café software that also runs bookings and memberships"
-          subtitle="LoftOS replaces fragmented timers, WhatsApp bookings, and spreadsheets with one white-label platform for lounges, cafés, and food floors."
+          subtitle="LOftPOS replaces fragmented timers, WhatsApp bookings, and spreadsheets with one white-label platform for lounges, cafés, and food floors."
         />
 
         {/* High-level system flow diagram */}
@@ -55,7 +55,7 @@ export default function Solution() {
           className="mb-12 overflow-x-auto rounded-3xl border border-white/10 bg-white/[0.04] p-5 backdrop-blur sm:p-8"
         >
           <p className="mb-6 text-center text-xs font-semibold uppercase tracking-[0.18em] text-mint">
-            How LoftOS runs your floor
+            How LOftPOS runs your floor
           </p>
           <div className="flex min-w-[640px] items-stretch justify-between gap-2 sm:min-w-0">
             {systemFlow.map((step, i) => {

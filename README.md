@@ -1,6 +1,6 @@
-# LoftOS Landing
+﻿# LOftPOS Landing
 
-Premium marketing site for **LoftOS** — the complete white-label gaming, café & restaurant management platform.
+Premium marketing site for **LOftPOS** — the complete white-label gaming, café & restaurant management platform.
 
 ## Stack
 
@@ -14,7 +14,7 @@ Premium marketing site for **LoftOS** — the complete white-label gaming, café
 ## Run locally
 
 ```bash
-cd loftos-landing
+cd loftpos-landing
 npm install
 npm run dev
 ```
@@ -48,4 +48,4 @@ Content source: `src/data/blogPosts.js`
 
 For production hosting, configure SPA fallback so `/blog/*` serves `index.html` (included `public/_redirects` for Netlify-style hosts; nginx: `try_files $uri $uri/ /index.html;`).
 
-Update canonical URL / OG image hosts in `index.html` and `src/components/SEO.jsx` before production deploy (currently `https://loftos.loftsixtyfour.com`).
+Update canonical URL / OG image hosts in `index.html` and `src/components/SEO.jsx` before production deploy (currently `https://loftpos.com`).

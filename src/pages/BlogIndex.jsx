@@ -1,23 +1,23 @@
-import { Helmet } from 'react-helmet-async'
+﻿import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { blogPosts, SITE_URL } from '../data/blogPosts'
 
 export default function BlogIndex() {
-  const title = 'LoftOS Blog — Gaming Café Software, Menus & QR Ordering'
+  const title = 'LOftPOS Blog — Gaming Café Software, Menus & QR Ordering'
   const description =
     'Guides on gaming café software, menu management software, and QR menu management for lounge and café operators.'
 
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Blog',
-    name: 'LoftOS Blog',
+    name: 'LOftPOS Blog',
     url: `${SITE_URL}/blog`,
     description,
     publisher: {
       '@type': 'Organization',
-      name: 'LoftOS',
+      name: 'LOftPOS',
       url: SITE_URL,
     },
     blogPost: blogPosts.map((post) => ({
@@ -51,7 +51,7 @@ export default function BlogIndex() {
       <main>
         <section className="relative overflow-hidden gradient-mesh pt-28 pb-16">
           <div className="section-pad container-page">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-mint">LoftOS Blog</p>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-mint">LOftPOS Blog</p>
             <h1 className="max-w-3xl font-display text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
               Operators’ guides for gaming cafés, menus, and QR ordering
             </h1>

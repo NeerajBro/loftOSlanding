@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 import { FiInstagram, FiMail, FiPhone } from 'react-icons/fi'
 import { useTrialSignup } from '../context/TrialSignupContext'
 
@@ -71,7 +71,7 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-[1.2fr_2fr]">
           <div>
             <Link to="/" className="font-display text-2xl font-bold text-ink dark:text-white">
-              Loft<span className="text-mint-deep dark:text-mint">OS</span>
+              LOft<span className="text-mint-deep dark:text-mint">POS</span>
             </Link>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-slate dark:text-white/55">
               Gaming café software with lounge booking tools and membership management — white-label
@@ -145,7 +145,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col gap-2 border-t border-line pt-6 text-xs text-slate dark:border-line-dark dark:text-white/40 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} LoftOS. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} LOftPOS. All rights reserved.</p>
           <p>Built for gaming cafés, lounge bookings, and membership-led floors.</p>
         </div>
       </div>

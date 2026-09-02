@@ -1,8 +1,8 @@
-import { useEffect, useMemo, useState } from 'react'
+﻿import { useEffect, useMemo, useState } from 'react'
 import { useTrialSignup } from '../context/TrialSignupContext'
 
 const THANK_YOU_MESSAGE =
-  'Thank you for your interest in LoftOS. Your account has been created. Please check your email for the activation link. Click that link to activate your account, then sign in  to start your free trial.'
+  'Thank you for your interest in LOftPOS. Your account has been created. Please check your email for the activation link. Click that link to activate your account, then sign in  to start your free trial.'
 
 export default function TrialSignupModal() {
   const { open, closeTrialSignup } = useTrialSignup()

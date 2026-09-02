@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+﻿import { motion } from 'framer-motion'
 import {
   FiCoffee,
   FiCpu,
@@ -32,7 +32,7 @@ export default function Industries() {
         <SectionHeading
           eyebrow="Industries"
           title="Built for gaming cafés, lounges, and member-driven floors"
-          subtitle="From gaming café software to lounge booking and membership management — LoftOS fits how entertainment venues actually sell time and food."
+          subtitle="From gaming café software to lounge booking and membership management — LOftPOS fits how entertainment venues actually sell time and food."
         />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {industries.map((ind, i) => {

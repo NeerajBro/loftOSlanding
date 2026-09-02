@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async'
+﻿import { Helmet } from 'react-helmet-async'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { useTrialSignup } from '../context/TrialSignupContext'
 import Navbar from '../components/Navbar'
@@ -104,7 +104,7 @@ function SectionBlock({ block }) {
             Book free demo
           </Button>
           <Button href="/" variant="ghost">
-            Explore LoftOS
+            Explore LOftPOS
           </Button>
         </div>
       </div>
@@ -139,7 +139,7 @@ export default function BlogPost() {
     },
     publisher: {
       '@type': 'Organization',
-      name: 'LoftOS',
+      name: 'LOftPOS',
       url: SITE_URL,
       logo: {
         '@type': 'ImageObject',
@@ -149,7 +149,7 @@ export default function BlogPost() {
     mainEntityOfPage: url,
     keywords: [
       post.keyword,
-      'LoftOS',
+      'LOftPOS',
       'gaming café',
       'QR menu',
       'menu management',
@@ -161,9 +161,9 @@ export default function BlogPost() {
     <>
       <Helmet>
         <html lang="en" />
-        <title>{`${post.title} | LoftOS Blog`}</title>
+        <title>{`${post.title} | LOftPOS Blog`}</title>
         <meta name="description" content={post.description} />
-        <meta name="keywords" content={`${post.keyword}, LoftOS, gaming cafe software, QR menu, menu management`} />
+        <meta name="keywords" content={`${post.keyword}, LOftPOS, gaming cafe software, QR menu, menu management`} />
         <link rel="canonical" href={url} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={url} />
@@ -263,7 +263,7 @@ export default function BlogPost() {
               </div>
 
               <div className="rounded-2xl border border-line bg-foam p-5 dark:border-line-dark dark:bg-ink-soft">
-                <p className="font-display text-sm font-bold text-ink dark:text-white">Try LoftOS</p>
+                <p className="font-display text-sm font-bold text-ink dark:text-white">Try LOftPOS</p>
                 <p className="mt-2 text-sm text-slate dark:text-white/55">
                   Gaming café software with menus, QR ordering, bookings, and memberships.
                 </p>

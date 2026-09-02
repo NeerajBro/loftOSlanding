@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+﻿import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { FiMenu, FiMoon, FiSun, FiX } from 'react-icons/fi'
 import { useTheme } from '../context/ThemeContext'
@@ -41,12 +41,12 @@ export default function Navbar() {
       }`}
     >
       <nav className="section-pad container-page flex h-16 items-center justify-between lg:h-18">
-        <Link to="/" className="group flex items-center gap-2.5" aria-label="LoftOS home">
+        <Link to="/" className="group flex items-center gap-2.5" aria-label="LOftPOS home">
           <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-mint to-cyan font-display text-sm font-bold text-ink shadow-lg shadow-mint/20">
             L
           </span>
           <span className="font-display text-lg font-bold tracking-tight text-white">
-            Loft<span className="text-mint">OS</span>
+            LOft<span className="text-mint">POS</span>
           </span>
         </Link>
 

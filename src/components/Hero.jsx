@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+﻿import { motion } from 'framer-motion'
 import { FiPlay } from 'react-icons/fi'
 import { useTrialSignup } from '../context/TrialSignupContext'
 import { Button } from './ui/Shared'
@@ -26,7 +26,7 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
             className="mb-5 font-display text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl"
           >
-            Loft<span className="text-gradient">OS</span>
+            LOft<span className="text-gradient">POS</span>
           </motion.p>
 
           <motion.p
@@ -53,7 +53,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-5 max-w-xl text-base leading-relaxed text-white/70 sm:text-lg"
           >
-            LoftOS is gaming café software with booking tools for gaming lounges and membership
+            LOftPOS is gaming café software with booking tools for gaming lounges and membership
             management — plus restaurant POS, QR ordering, inventory, and reports under your brand.
           </motion.p>
 

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+﻿import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { FiCheck } from 'react-icons/fi'
 import { pricingPlans } from '../data/content'
@@ -96,7 +96,7 @@ export default function Pricing() {
 
         <div className="mt-12 overflow-x-auto rounded-2xl border border-line dark:border-line-dark">
           <table className="min-w-full text-left text-sm">
-            <caption className="sr-only">Feature comparison across LoftOS plans</caption>
+            <caption className="sr-only">Feature comparison across LOftPOS plans</caption>
             <thead className="bg-mist dark:bg-ink">
               <tr>
                 <th className="px-4 py-3 font-semibold text-ink dark:text-white">Capability</th>

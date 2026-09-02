@@ -1,4 +1,4 @@
-export const SITE_URL = 'https://loftos.loftsixtyfour.com'
+﻿export const SITE_URL = 'https://loftpos.com'
 
 export const blogPosts = [
   {
@@ -6,17 +6,17 @@ export const blogPosts = [
     keyword: 'Gaming cafe software',
     title: 'Gaming Café Software: What Owners Actually Need in 2026',
     description:
-      'A practical guide to gaming café software — session timers, POS, lounge bookings, memberships, and food tabs. See how LoftOS replaces phone timers and paper tickets.',
+      'A practical guide to gaming café software — session timers, POS, lounge bookings, memberships, and food tabs. See how LOftPOS replaces phone timers and paper tickets.',
     datePublished: '2026-08-05',
     dateModified: '2026-08-05',
     readingMinutes: 9,
-    author: 'LoftOS Team',
+    author: 'LOftPOS Team',
     eyebrow: 'Gaming café software',
     related: ['menu-management-software', 'qr-menu-management-software'],
     sections: [
       {
         type: 'p',
-        text: 'Gaming café software is the operating system for timed entertainment floors. If you still run PlayStation or PC sessions with phone timers, handwritten tickets, and a separate food counter, you are paying for that friction every weekend peak. This guide explains what modern gaming café software should cover, which mistakes drain margins, and how LoftOS brings sessions, bookings, memberships, and F&B onto one white-label platform.',
+        text: 'Gaming café software is the operating system for timed entertainment floors. If you still run PlayStation or PC sessions with phone timers, handwritten tickets, and a separate food counter, you are paying for that friction every weekend peak. This guide explains what modern gaming café software should cover, which mistakes drain margins, and how LOftPOS brings sessions, bookings, memberships, and F&B onto one white-label platform.',
       },
       {
         type: 'h2',
@@ -114,16 +114,16 @@ export const blogPosts = [
       },
       {
         type: 'h2',
-        id: 'how-loftos',
-        text: 'How LoftOS delivers gaming café software',
+        id: 'how-loftpos',
+        text: 'How LOftPOS delivers gaming café software',
       },
       {
         type: 'p',
-        text: 'LoftOS is white-label, multi-tenant gaming café software for PlayStation lounges, PC cafés, esports floors, and hybrid restaurant venues. Operators use it to run sessions, restaurant POS, QR ordering, kitchen display, inventory, staff permissions, lounge bookings, membership packs, and analytics under their own logo and colours.',
+        text: 'LOftPOS is white-label, multi-tenant gaming café software for PlayStation lounges, PC cafés, esports floors, and hybrid restaurant venues. Operators use it to run sessions, restaurant POS, QR ordering, kitchen display, inventory, staff permissions, lounge bookings, membership packs, and analytics under their own logo and colours.',
       },
       {
         type: 'quote',
-        text: 'Checkout used to take forever on weekend nights. With LoftOS we cut billing time by about 40% and overtime no longer slips through.',
+        text: 'Checkout used to take forever on weekend nights. With LOftPOS we cut billing time by about 40% and overtime no longer slips through.',
       },
       {
         type: 'ul',
@@ -169,7 +169,7 @@ export const blogPosts = [
       },
       {
         type: 'p',
-        text: 'It should. LoftOS combines gaming session billing with restaurant POS and QR ordering so guests get one settlement path.',
+        text: 'It should. LOftPOS combines gaming session billing with restaurant POS and QR ordering so guests get one settlement path.',
       },
       {
         type: 'h3',
@@ -177,11 +177,11 @@ export const blogPosts = [
       },
       {
         type: 'p',
-        text: 'At minimum: session timers, counter POS, inventory alerts, receipts, and staff basics. Bookings, deeper analytics, and membership packs typically unlock as you grow — which is how LoftOS plans are structured.',
+        text: 'At minimum: session timers, counter POS, inventory alerts, receipts, and staff basics. Bookings, deeper analytics, and membership packs typically unlock as you grow — which is how LOftPOS plans are structured.',
       },
       {
         type: 'cta',
-        title: 'See LoftOS gaming café software live',
+        title: 'See LOftPOS gaming café software live',
         text: 'Book a free demo or start a 14-day trial. We will onboard rates, branding, and your menu so the floor can go live quickly.',
       },
     ],
@@ -191,17 +191,17 @@ export const blogPosts = [
     keyword: 'Menu management software',
     title: 'Menu Management Software for Cafés, Lounges & Gaming Floors',
     description:
-      'Menu management software keeps prices, categories, GST items, and availability in sync for cafés and gaming lounges. Learn what to look for and how LoftOS handles menus.',
+      'Menu management software keeps prices, categories, GST items, and availability in sync for cafés and gaming lounges. Learn what to look for and how LOftPOS handles menus.',
     datePublished: '2026-08-05',
     dateModified: '2026-08-05',
     readingMinutes: 8,
-    author: 'LoftOS Team',
+    author: 'LOftPOS Team',
     eyebrow: 'Menu management software',
     related: ['qr-menu-management-software', 'gaming-cafe-software'],
     sections: [
       {
         type: 'p',
-        text: 'Menu management software is the control room for everything guests can order — and everything that can leak stock. For cafés attached to gaming lounges, a static PDF or chalkboard menu creates delays, outdated prices, and kitchen confusion. This article covers what menu management software should do for entertainment venues, how it connects to QR ordering and POS, and how LoftOS keeps a live, brandable menu across counter and tables.',
+        text: 'Menu management software is the control room for everything guests can order — and everything that can leak stock. For cafés attached to gaming lounges, a static PDF or chalkboard menu creates delays, outdated prices, and kitchen confusion. This article covers what menu management software should do for entertainment venues, how it connects to QR ordering and POS, and how LOftPOS keeps a live, brandable menu across counter and tables.',
       },
       {
         type: 'h2',
@@ -266,7 +266,7 @@ export const blogPosts = [
       },
       {
         type: 'p',
-        text: 'When a cola sells with a session tab, stock should fall automatically. Low-stock alerts tell managers to restock before the rush, and voids should restore inventory with an audit trail — features LoftOS builds around food sales.',
+        text: 'When a cola sells with a session tab, stock should fall automatically. Low-stock alerts tell managers to restock before the rush, and voids should restore inventory with an audit trail — features LOftPOS builds around food sales.',
       },
       {
         type: 'h3',
@@ -313,12 +313,12 @@ export const blogPosts = [
       },
       {
         type: 'h2',
-        id: 'loftos-menus',
-        text: 'How LoftOS handles menu management',
+        id: 'loftpos-menus',
+        text: 'How LOftPOS handles menu management',
       },
       {
         type: 'p',
-        text: 'LoftOS includes menu management software capabilities inside a broader gaming café OS. Operators maintain the catalog that powers counter POS, QR ordering, kitchen display tickets, inventory deductions, and branded guest menus. Because LoftOS is multi-tenant and white-label, each lounge or café keeps its own menu identity and data isolation.',
+        text: 'LOftPOS includes menu management software capabilities inside a broader gaming café OS. Operators maintain the catalog that powers counter POS, QR ordering, kitchen display tickets, inventory deductions, and branded guest menus. Because LOftPOS is multi-tenant and white-label, each lounge or café keeps its own menu identity and data isolation.',
       },
       {
         type: 'ul',
@@ -353,7 +353,7 @@ export const blogPosts = [
       },
       {
         type: 'h3',
-        text: 'Does LoftOS replace separate menu builder tools?',
+        text: 'Does LOftPOS replace separate menu builder tools?',
       },
       {
         type: 'p',
@@ -361,7 +361,7 @@ export const blogPosts = [
       },
       {
         type: 'cta',
-        title: 'Manage your café menu inside LoftOS',
+        title: 'Manage your café menu inside LOftPOS',
         text: 'See live menu, kitchen, and session billing on one white-label stack. Book a demo or start your trial.',
       },
     ],
@@ -371,17 +371,17 @@ export const blogPosts = [
     keyword: 'QR Menu management software',
     title: 'QR Menu Management Software: From Table Scan to Kitchen Ticket',
     description:
-      'QR menu management software lets guests scan, order, and track status while kitchens get live tickets. Learn workflows for gaming cafés and how LoftOS QR ordering works.',
+      'QR menu management software lets guests scan, order, and track status while kitchens get live tickets. Learn workflows for gaming cafés and how LOftPOS QR ordering works.',
     datePublished: '2026-08-05',
     dateModified: '2026-08-05',
     readingMinutes: 9,
-    author: 'LoftOS Team',
+    author: 'LOftPOS Team',
     eyebrow: 'QR menu management software',
     related: ['menu-management-software', 'gaming-cafe-software'],
     sections: [
       {
         type: 'p',
-        text: 'QR menu management software turns every table — and every gaming station zone — into an ordering point. Guests scan, browse a live menu, place notes, and track status while the kitchen board updates without shouted tickets. For gaming cafés fighting peak-hour queues, that flow protects vibe and turnover. Here is how QR menu management software works, what good looks like, and how LoftOS connects scans to kitchen display and session settlement.',
+        text: 'QR menu management software turns every table — and every gaming station zone — into an ordering point. Guests scan, browse a live menu, place notes, and track status while the kitchen board updates without shouted tickets. For gaming cafés fighting peak-hour queues, that flow protects vibe and turnover. Here is how QR menu management software works, what good looks like, and how LOftPOS connects scans to kitchen display and session settlement.',
       },
       {
         type: 'h2',
@@ -461,7 +461,7 @@ export const blogPosts = [
       },
       {
         type: 'p',
-        text: 'LoftOS keeps that catalog shared across counter POS and QR so you do not maintain two menus. That is the quiet advantage most “QR sticker only” tools miss.',
+        text: 'LOftPOS keeps that catalog shared across counter POS and QR so you do not maintain two menus. That is the quiet advantage most “QR sticker only” tools miss.',
       },
       {
         type: 'h2',
@@ -480,12 +480,12 @@ export const blogPosts = [
       },
       {
         type: 'h2',
-        id: 'loftos-qr',
-        text: 'How LoftOS QR menu management works',
+        id: 'loftpos-qr',
+        text: 'How LOftPOS QR menu management works',
       },
       {
         type: 'p',
-        text: 'LoftOS includes QR menu management software as part of its gaming café and restaurant OS. You create tables with unique QR codes. Guests scan, browse your menu, place orders with notes, and track status while the kitchen board updates in real time. Settlement supports discount, GST, and payment modes including UPI and cash — alongside gaming session billing when food rides on timed play.',
+        text: 'LOftPOS includes QR menu management software as part of its gaming café and restaurant OS. You create tables with unique QR codes. Guests scan, browse your menu, place orders with notes, and track status while the kitchen board updates in real time. Settlement supports discount, GST, and payment modes including UPI and cash — alongside gaming session billing when food rides on timed play.',
       },
       {
         type: 'ul',
@@ -508,7 +508,7 @@ export const blogPosts = [
       },
       {
         type: 'p',
-        text: 'They should not. Browser-based QR menus remove friction. LoftOS is designed around scan-and-order flows rather than forcing a download at the table.',
+        text: 'They should not. Browser-based QR menus remove friction. LOftPOS is designed around scan-and-order flows rather than forcing a download at the table.',
       },
       {
         type: 'h3',
@@ -524,11 +524,11 @@ export const blogPosts = [
       },
       {
         type: 'p',
-        text: 'For a pure coffee counter maybe. For gaming cafés, pair it with gaming café software so timers, memberships, bookings, and F&B share one operational story — which is LoftOS’s approach.',
+        text: 'For a pure coffee counter maybe. For gaming cafés, pair it with gaming café software so timers, memberships, bookings, and F&B share one operational story — which is LOftPOS’s approach.',
       },
       {
         type: 'cta',
-        title: 'Launch QR ordering with LoftOS',
+        title: 'Launch QR ordering with LOftPOS',
         text: 'See table QR, kitchen display, and session billing in one demo. Start a free trial when you are ready to go live.',
       },
     ],

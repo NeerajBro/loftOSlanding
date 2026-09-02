@@ -1,6 +1,6 @@
-import { Helmet } from 'react-helmet-async'
+﻿import { Helmet } from 'react-helmet-async'
 
-const SITE_URL = 'https://loftos.loftsixtyfour.com'
+const SITE_URL = 'https://loftpos.com'
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -8,7 +8,7 @@ const jsonLd = {
     {
       '@type': 'Organization',
       '@id': `${SITE_URL}/#organization`,
-      name: 'LoftOS',
+      name: 'LOftPOS',
       url: SITE_URL,
       logo: {
         '@type': 'ImageObject',
@@ -23,7 +23,7 @@ const jsonLd = {
     {
       '@type': 'SoftwareApplication',
       '@id': `${SITE_URL}/#software`,
-      name: 'LoftOS',
+      name: 'LOftPOS',
       applicationCategory: 'BusinessApplication',
       applicationSubCategory: 'Gaming Café Software',
       operatingSystem: 'Web',
@@ -52,10 +52,10 @@ const jsonLd = {
     {
       '@type': 'WebSite',
       '@id': `${SITE_URL}/#website`,
-      name: 'LoftOS',
+      name: 'LOftPOS',
       url: SITE_URL,
       description:
-        'LoftOS is gaming café software for lounges and arenas — bookings, memberships, POS, and floor operations in one platform.',
+        'LOftPOS is gaming café software for lounges and arenas — bookings, memberships, POS, and floor operations in one platform.',
       publisher: { '@id': `${SITE_URL}/#organization` },
       inLanguage: 'en',
     },
@@ -63,7 +63,7 @@ const jsonLd = {
       '@type': 'WebPage',
       '@id': `${SITE_URL}/#webpage`,
       url: SITE_URL,
-      name: 'LoftOS — Gaming Café Software, Lounge Bookings & Memberships',
+      name: 'LOftPOS — Gaming Café Software, Lounge Bookings & Memberships',
       isPartOf: { '@id': `${SITE_URL}/#website` },
       about: { '@id': `${SITE_URL}/#software` },
       description:
@@ -74,7 +74,7 @@ const jsonLd = {
 }
 
 export default function SEO() {
-  const title = 'LoftOS — Gaming Café Software for Lounges & Memberships'
+  const title = 'LOftPOS — Gaming Café Software for Lounges & Memberships'
   const description =
     'Gaming café software with lounge booking tools and membership management. Run sessions, POS, QR ordering, inventory, and white-label branding from one platform.'
 
@@ -85,7 +85,7 @@ export default function SEO() {
       <meta name="description" content={description} />
       <meta
         name="keywords"
-        content="gaming cafe software, booking software for gaming lounge, membership management software, gaming POS, cafe management software, restaurant POS, PlayStation lounge software, QR menu ordering, white label POS, LoftOS"
+        content="gaming cafe software, booking software for gaming lounge, membership management software, gaming POS, cafe management software, restaurant POS, PlayStation lounge software, QR menu ordering, white label POS, LOftPOS"
       />
       <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
       <link rel="canonical" href={`${SITE_URL}/`} />
@@ -95,7 +95,7 @@ export default function SEO() {
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={`${SITE_URL}/og-image.png`} />
-      <meta property="og:site_name" content="LoftOS" />
+      <meta property="og:site_name" content="LOftPOS" />
       <meta property="og:locale" content="en_IN" />
 
       <meta name="twitter:card" content="summary_large_image" />

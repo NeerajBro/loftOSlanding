@@ -1,9 +1,9 @@
-# LoftOS
+﻿# LOftPOS
 
 > White-label gaming café software for gaming lounges, PlayStation arenas, cafés, and entertainment centers.
 
 ## Product
-LoftOS is a multi-tenant operating system that combines gaming session billing, booking software for gaming lounges, membership management, restaurant POS, QR ordering, kitchen display, inventory, staff permissions, and analytics.
+LOftPOS is a multi-tenant operating system that combines gaming session billing, booking software for gaming lounges, membership management, restaurant POS, QR ordering, kitchen display, inventory, staff permissions, and analytics.
 
 ## Primary audiences
 - Gaming café and PlayStation lounge owners
@@ -24,12 +24,12 @@ LoftOS is a multi-tenant operating system that combines gaming session billing, 
 - 14-day free trial available
 
 ## Blog guides
-- Gaming café software: https://loftos.loftsixtyfour.com/blog/gaming-cafe-software
-- Menu management software: https://loftos.loftsixtyfour.com/blog/menu-management-software
-- QR menu management software: https://loftos.loftsixtyfour.com/blog/qr-menu-management-software
+- Gaming café software: https://loftpos.com/blog/gaming-cafe-software
+- Menu management software: https://loftpos.com/blog/menu-management-software
+- QR menu management software: https://loftpos.com/blog/qr-menu-management-software
 
 ## Contact
-- Website: https://loftos.loftsixtyfour.com/
+- Website: https://loftpos.com/
 - Email: loft64venture@gmail.com
 - Phone: +91 9987762009
 - Instagram: https://www.instagram.com/loft64hq/
