@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# Source demo recordings (compressed copies live in public/videos/)
+*.mp4
+!public/videos/*.mp4
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

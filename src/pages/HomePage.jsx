@@ -6,6 +6,7 @@ import Hero from '../components/Hero'
 import ClientLogos from '../components/ClientLogos'
 import Problem from '../components/Problem'
 import Solution from '../components/Solution'
+import ProductDemo from '../components/ProductDemo'
 import Features from '../components/Features'
 import WhiteLabel from '../components/WhiteLabel'
 import Industries from '../components/Industries'
@@ -31,6 +32,7 @@ export default function HomePage() {
         <ClientLogos />
         <Problem />
         <Solution />
+        <ProductDemo />
         <Flows />
         <Features />
         <WhiteLabel />

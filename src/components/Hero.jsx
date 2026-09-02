@@ -85,7 +85,7 @@ export default function Hero() {
               Start free trial
             </Button>
             <a
-              href="#flows"
+              href="#demo"
               className="inline-flex items-center gap-2 px-3 py-3 text-sm font-semibold text-white/80 transition hover:text-white"
             >
               <span className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 ring-1 ring-white/20">
