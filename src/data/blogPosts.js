@@ -1,5 +1,4 @@
-﻿export const SITE_URL = 'https://loftpos.com'
-
+﻿export { SITE_URL } from '../config/seo'
 export const blogPosts = [
   {
     slug: 'gaming-cafe-software',

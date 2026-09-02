@@ -8,8 +8,7 @@ import { Button } from './ui/Shared'
 const sectionLinks = [
   { href: '/#features', label: 'Features' },
   { href: '/#flows', label: 'How it works' },
-  { href: '/#white-label', label: 'White Label' },
-  { href: '/#industries', label: 'Industries' },
+  { to: '/solutions', label: 'Solutions' },
   { href: '/#pricing', label: 'Pricing' },
   { href: '/#faq', label: 'FAQ' },
 ]
@@ -51,15 +50,27 @@ export default function Navbar() {
         </Link>
 
         <div className="hidden items-center gap-8 md:flex">
-          {sectionLinks.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
-              className="text-sm font-medium text-white/70 transition hover:text-white"
-            >
-              {l.label}
-            </a>
-          ))}
+          {sectionLinks.map((l) =>
+            l.to ? (
+              <Link
+                key={l.to}
+                to={l.to}
+                className={`text-sm font-medium transition hover:text-white ${
+                  pathname.startsWith(l.to) ? 'text-white' : 'text-white/70'
+                }`}
+              >
+                {l.label}
+              </Link>
+            ) : (
+              <a
+                key={l.href}
+                href={l.href}
+                className="text-sm font-medium text-white/70 transition hover:text-white"
+              >
+                {l.label}
+              </a>
+            ),
+          )}
           <Link
             to="/blog"
             className={`text-sm font-medium transition hover:text-white ${
@@ -106,16 +117,27 @@ export default function Navbar() {
       {open && (
         <div className="border-t border-white/10 bg-ink/95 px-5 py-4 backdrop-blur-xl md:hidden">
           <div className="flex flex-col gap-3">
-            {sectionLinks.map((l) => (
-              <a
-                key={l.href}
-                href={l.href}
-                onClick={() => setOpen(false)}
-                className="rounded-lg px-3 py-2 text-sm font-medium text-white/80 hover:bg-white/5"
-              >
-                {l.label}
-              </a>
-            ))}
+            {sectionLinks.map((l) =>
+              l.to ? (
+                <Link
+                  key={l.to}
+                  to={l.to}
+                  onClick={() => setOpen(false)}
+                  className="rounded-lg px-3 py-2 text-sm font-medium text-white/80 hover:bg-white/5"
+                >
+                  {l.label}
+                </Link>
+              ) : (
+                <a
+                  key={l.href}
+                  href={l.href}
+                  onClick={() => setOpen(false)}
+                  className="rounded-lg px-3 py-2 text-sm font-medium text-white/80 hover:bg-white/5"
+                >
+                  {l.label}
+                </a>
+              ),
+            )}
             <Link
               to="/blog"
               onClick={() => setOpen(false)}

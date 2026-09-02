@@ -1,11 +1,11 @@
-﻿import { Helmet } from 'react-helmet-async'
+﻿import PageSEO, { breadcrumbJsonLd } from '../components/PageSEO'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { useTrialSignup } from '../context/TrialSignupContext'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { Button } from '../components/ui/Shared'
+import { SITE_URL } from '../config/seo'
 import {
-  SITE_URL,
   getPostBySlug,
   getRelatedPosts,
   blogPosts,
@@ -127,56 +127,57 @@ export default function BlogPost() {
 
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    headline: post.title,
-    description: post.description,
-    datePublished: post.datePublished,
-    dateModified: post.dateModified,
-    author: {
-      '@type': 'Organization',
-      name: post.author,
-      url: SITE_URL,
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: 'LOftPOS',
-      url: SITE_URL,
-      logo: {
-        '@type': 'ImageObject',
-        url: `${SITE_URL}/favicon.svg`,
+    '@graph': [
+      breadcrumbJsonLd([
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: post.title, url: `/blog/${post.slug}` },
+      ]),
+      {
+        '@type': 'BlogPosting',
+        headline: post.title,
+        description: post.description,
+        datePublished: post.datePublished,
+        dateModified: post.dateModified,
+        author: {
+          '@type': 'Organization',
+          name: post.author,
+          url: SITE_URL,
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'LoftPOS',
+          url: SITE_URL,
+          logo: {
+            '@type': 'ImageObject',
+            url: `${SITE_URL}/favicon.svg`,
+          },
+        },
+        mainEntityOfPage: url,
+        keywords: [
+          post.keyword,
+          'LoftPOS',
+          'gaming cafe POS',
+          'QR menu',
+          'menu management',
+        ].join(', '),
+        articleSection: post.eyebrow,
       },
-    },
-    mainEntityOfPage: url,
-    keywords: [
-      post.keyword,
-      'LOftPOS',
-      'gaming café',
-      'QR menu',
-      'menu management',
-    ].join(', '),
-    articleSection: post.eyebrow,
+    ],
   }
 
   return (
     <>
-      <Helmet>
-        <html lang="en" />
-        <title>{`${post.title} | LOftPOS Blog`}</title>
-        <meta name="description" content={post.description} />
-        <meta name="keywords" content={`${post.keyword}, LOftPOS, gaming cafe software, QR menu, menu management`} />
-        <link rel="canonical" href={url} />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content={url} />
-        <meta property="og:title" content={post.title} />
-        <meta property="og:description" content={post.description} />
-        <meta property="og:image" content={`${SITE_URL}/og-image.png`} />
-        <meta property="article:published_time" content={post.datePublished} />
-        <meta property="article:modified_time" content={post.dateModified} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={post.title} />
-        <meta name="twitter:description" content={post.description} />
-        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
-      </Helmet>
+      <PageSEO
+        title={post.title}
+        description={post.description}
+        canonical={url}
+        ogType="article"
+        keywords={`${post.keyword}, LoftPOS, gaming cafe POS, QR menu, menu management`}
+        articlePublished={post.datePublished}
+        articleModified={post.dateModified}
+        jsonLd={jsonLd}
+      />
 
       <Navbar />
       <main>
@@ -265,7 +266,8 @@ export default function BlogPost() {
               <div className="rounded-2xl border border-line bg-foam p-5 dark:border-line-dark dark:bg-ink-soft">
                 <p className="font-display text-sm font-bold text-ink dark:text-white">Try LOftPOS</p>
                 <p className="mt-2 text-sm text-slate dark:text-white/55">
-                  Gaming café software with menus, QR ordering, bookings, and memberships.
+                  POS software for gaming cafes, restaurants, and cafes with menus, QR ordering,
+                  bookings, and memberships.
                 </p>
                 <Link
                   to="/"

@@ -1,15 +1,21 @@
-﻿# LOftPOS
+﻿# LoftPOS
 
-> White-label gaming café software for gaming lounges, PlayStation arenas, cafés, and entertainment centers.
+> POS and management software for gaming cafes, restaurants, and cafes — billing, inventory, sessions, bookings, and reports.
 
 ## Product
-LOftPOS is a multi-tenant operating system that combines gaming session billing, booking software for gaming lounges, membership management, restaurant POS, QR ordering, kitchen display, inventory, staff permissions, and analytics.
+LoftPOS is a multi-tenant cloud POS platform that combines gaming session billing, lounge booking software, membership management, restaurant and cafe POS, QR ordering, kitchen display, inventory, staff permissions, and analytics.
 
 ## Primary audiences
-- Gaming café and PlayStation lounge owners
+- Gaming cafe and PlayStation lounge owners
+- Restaurant and cafe operators
 - Esports and entertainment venue operators
-- Café and restaurant floors attached to gaming spaces
-- Multi-location / white-label entertainment networks
+- Multi-location / white-label hospitality networks
+
+## Solution pages
+- Gaming cafe POS: https://loftpos.com/solutions/gaming-cafe
+- Restaurant POS: https://loftpos.com/solutions/restaurant
+- Cafe POS: https://loftpos.com/solutions/cafe
+- All solutions: https://loftpos.com/solutions
 
 ## Core capabilities
 - Gaming café software: start, pause, extend, and settle timed sessions with food add-ons, overtime, GST, and branded receipts

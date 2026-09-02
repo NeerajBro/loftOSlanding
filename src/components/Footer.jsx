@@ -15,10 +15,10 @@ const columns = [
   {
     title: 'Industries',
     links: [
-      { label: 'Gaming cafés', href: '/#industries' },
-      { label: 'Lounge bookings', href: '/#features' },
-      { label: 'Memberships', href: '/#features' },
-      { label: 'Multi-location', href: '/#multi-branch' },
+      { label: 'Gaming cafe POS', to: '/solutions/gaming-cafe' },
+      { label: 'Restaurant POS', to: '/solutions/restaurant' },
+      { label: 'Cafe POS', to: '/solutions/cafe' },
+      { label: 'All solutions', to: '/solutions' },
     ],
   },
   {
@@ -74,8 +74,8 @@ export default function Footer() {
               LOft<span className="text-mint-deep dark:text-mint">POS</span>
             </Link>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-slate dark:text-white/55">
-              Gaming café software with lounge booking tools and membership management — white-label
-              for restaurants and entertainment businesses.
+              POS software for gaming cafes, restaurants, and cafes — billing, inventory, bookings,
+              and reports under your brand.
             </p>
 
             <div id="contact" className="mt-6">
@@ -146,7 +146,7 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col gap-2 border-t border-line pt-6 text-xs text-slate dark:border-line-dark dark:text-white/40 sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} LOftPOS. All rights reserved.</p>
-          <p>Built for gaming cafés, lounge bookings, and membership-led floors.</p>
+          <p>Built for gaming cafes, restaurants, cafes, and entertainment venues.</p>
         </div>
       </div>
     </footer>

@@ -1,4 +1,5 @@
-﻿import { motion } from 'framer-motion'
+﻿import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 import {
   FiCoffee,
   FiCpu,
@@ -23,6 +24,12 @@ const iconMap = {
   foodcourt: FiZap,
   network: FiShare2,
   center: FiGrid,
+}
+
+const solutionLinks = {
+  'Gaming Café': '/solutions/gaming-cafe',
+  Restaurant: '/solutions/restaurant',
+  Café: '/solutions/cafe',
 }
 
 export default function Industries() {
@@ -50,7 +57,18 @@ export default function Industries() {
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-mint to-cyan text-ink">
                   <Icon size={22} aria-hidden />
                 </div>
-                <h3 className="font-display text-xl font-bold text-ink dark:text-white">{ind.name}</h3>
+                <h3 className="font-display text-xl font-bold text-ink dark:text-white">
+                  {solutionLinks[ind.name] ? (
+                    <Link
+                      to={solutionLinks[ind.name]}
+                      className="transition hover:text-mint-deep dark:hover:text-mint"
+                    >
+                      {ind.name}
+                    </Link>
+                  ) : (
+                    ind.name
+                  )}
+                </h3>
                 <p className="mt-2 text-sm leading-relaxed text-slate dark:text-white/60">{ind.blurb}</p>
               </motion.article>
             )

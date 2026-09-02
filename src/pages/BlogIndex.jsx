@@ -1,63 +1,64 @@
-﻿import { Helmet } from 'react-helmet-async'
+﻿import PageSEO, { breadcrumbJsonLd } from '../components/PageSEO'
 import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import { blogPosts, SITE_URL } from '../data/blogPosts'
+import { SITE_URL } from '../config/seo'
+import { blogPosts } from '../data/blogPosts'
 
 export default function BlogIndex() {
-  const title = 'LOftPOS Blog — Gaming Café Software, Menus & QR Ordering'
+  const title = 'LoftPOS Blog — Gaming Cafe, Restaurant & Cafe POS Guides'
   const description =
-    'Guides on gaming café software, menu management software, and QR menu management for lounge and café operators.'
+    'Practical guides on gaming cafe POS software, restaurant billing, cafe POS, menu management, and QR ordering for hospitality operators.'
 
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Blog',
-    name: 'LOftPOS Blog',
-    url: `${SITE_URL}/blog`,
-    description,
-    publisher: {
-      '@type': 'Organization',
-      name: 'LOftPOS',
-      url: SITE_URL,
-    },
-    blogPost: blogPosts.map((post) => ({
-      '@type': 'BlogPosting',
-      headline: post.title,
-      url: `${SITE_URL}/blog/${post.slug}`,
-      datePublished: post.datePublished,
-      description: post.description,
-    })),
+    '@graph': [
+      breadcrumbJsonLd([
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+      ]),
+      {
+        '@type': 'Blog',
+        name: 'LoftPOS Blog',
+        url: `${SITE_URL}/blog`,
+        description,
+        publisher: {
+          '@type': 'Organization',
+          name: 'LoftPOS',
+          url: SITE_URL,
+        },
+        blogPost: blogPosts.map((post) => ({
+          '@type': 'BlogPosting',
+          headline: post.title,
+          url: `${SITE_URL}/blog/${post.slug}`,
+          datePublished: post.datePublished,
+          description: post.description,
+        })),
+      },
+    ],
   }
 
   return (
     <>
-      <Helmet>
-        <html lang="en" />
-        <title>{title}</title>
-        <meta name="description" content={description} />
-        <link rel="canonical" href={`${SITE_URL}/blog`} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={`${SITE_URL}/blog`} />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
-        <meta property="og:image" content={`${SITE_URL}/og-image.png`} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={description} />
-        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
-      </Helmet>
+      <PageSEO
+        title={title}
+        description={description}
+        canonical={`${SITE_URL}/blog`}
+        keywords="gaming cafe POS, restaurant POS, cafe POS, menu management software, QR menu ordering, LoftPOS blog"
+        jsonLd={jsonLd}
+      />
 
       <Navbar />
       <main>
         <section className="relative overflow-hidden gradient-mesh pt-28 pb-16">
           <div className="section-pad container-page">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-mint">LOftPOS Blog</p>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-mint">LoftPOS Blog</p>
             <h1 className="max-w-3xl font-display text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-              Operators’ guides for gaming cafés, menus, and QR ordering
+              Guides for gaming cafes, restaurants, and cafe operators
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/70 sm:text-lg">
-              Practical articles on gaming café software, menu management software, and QR menu
-              management — written for how entertainment floors actually run.
+              Practical articles on POS software, menu management, and QR ordering — written for how
+              hospitality and entertainment floors actually run.
             </p>
           </div>
         </section>

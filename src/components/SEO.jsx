@@ -1,6 +1,10 @@
-﻿import { Helmet } from 'react-helmet-async'
+﻿import { faqs } from '../data/content'
+import PageSEO from './PageSEO'
+import { OG_IMAGE, SITE_NAME, SITE_URL } from '../config/seo'
 
-const SITE_URL = 'https://loftpos.com'
+const title = 'LoftPOS | POS Software for Gaming Cafes, Restaurants & Cafes'
+const description =
+  'LoftPOS helps gaming cafes, restaurants and cafes manage billing, sales, inventory, customers and daily operations from one powerful POS platform.'
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -8,14 +12,14 @@ const jsonLd = {
     {
       '@type': 'Organization',
       '@id': `${SITE_URL}/#organization`,
-      name: 'LOftPOS',
+      name: SITE_NAME,
       url: SITE_URL,
       logo: {
         '@type': 'ImageObject',
         url: `${SITE_URL}/favicon.svg`,
       },
       description:
-        'Gaming café software and white-label OS for gaming lounges, restaurants, and entertainment centers — sessions, bookings, memberships, POS, and QR ordering.',
+        'POS and management software for gaming cafes, restaurants, and cafes — sessions, bookings, memberships, billing, inventory, and reports.',
       email: 'loft64venture@gmail.com',
       telephone: '+91-9987762009',
       sameAs: ['https://www.instagram.com/loft64hq/'],
@@ -23,19 +27,19 @@ const jsonLd = {
     {
       '@type': 'SoftwareApplication',
       '@id': `${SITE_URL}/#software`,
-      name: 'LOftPOS',
+      name: SITE_NAME,
       applicationCategory: 'BusinessApplication',
-      applicationSubCategory: 'Gaming Café Software',
+      applicationSubCategory: 'Point of Sale Software',
       operatingSystem: 'Web',
       url: SITE_URL,
-      image: `${SITE_URL}/og-image.png`,
+      image: OG_IMAGE,
       description:
-        'Gaming café software with session timers, booking software for gaming lounges, membership management, restaurant POS, QR ordering, inventory, and analytics — white-label and multi-tenant.',
+        'Cloud POS software for gaming cafes, restaurants, and cafes with session billing, lounge bookings, membership management, QR ordering, inventory, and analytics.',
       featureList: [
-        'Gaming café session billing and timers',
-        'Booking software for gaming lounges',
+        'Gaming cafe session billing and timers',
+        'Lounge booking software',
         'Membership and prepaid pack management',
-        'Restaurant POS with GST',
+        'Restaurant and cafe POS with GST',
         'QR menu ordering and kitchen display',
         'Inventory and staff permissions',
         'White-label multi-tenant branding',
@@ -52,58 +56,42 @@ const jsonLd = {
     {
       '@type': 'WebSite',
       '@id': `${SITE_URL}/#website`,
-      name: 'LOftPOS',
+      name: SITE_NAME,
       url: SITE_URL,
       description:
-        'LOftPOS is gaming café software for lounges and arenas — bookings, memberships, POS, and floor operations in one platform.',
+        'LoftPOS is POS software for gaming cafes, restaurants, and cafes — billing, inventory, customers, and daily operations in one platform.',
       publisher: { '@id': `${SITE_URL}/#organization` },
       inLanguage: 'en',
     },
     {
       '@type': 'WebPage',
       '@id': `${SITE_URL}/#webpage`,
-      url: SITE_URL,
-      name: 'LOftPOS — Gaming Café Software, Lounge Bookings & Memberships',
+      url: `${SITE_URL}/`,
+      name: title,
       isPartOf: { '@id': `${SITE_URL}/#website` },
       about: { '@id': `${SITE_URL}/#software` },
-      description:
-        'Run gaming cafés and lounges with session POS, online slot bookings, membership management, QR ordering, inventory, and white-label branding.',
+      description,
       inLanguage: 'en',
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: faqs.slice(0, 12).map((faq) => ({
+        '@type': 'Question',
+        name: faq.q,
+        acceptedAnswer: { '@type': 'Answer', text: faq.a },
+      })),
     },
   ],
 }
 
 export default function SEO() {
-  const title = 'LOftPOS — Gaming Café Software for Lounges & Memberships'
-  const description =
-    'Gaming café software with lounge booking tools and membership management. Run sessions, POS, QR ordering, inventory, and white-label branding from one platform.'
-
   return (
-    <Helmet>
-      <html lang="en" />
-      <title>{title}</title>
-      <meta name="description" content={description} />
-      <meta
-        name="keywords"
-        content="gaming cafe software, booking software for gaming lounge, membership management software, gaming POS, cafe management software, restaurant POS, PlayStation lounge software, QR menu ordering, white label POS, LOftPOS"
-      />
-      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
-      <link rel="canonical" href={`${SITE_URL}/`} />
-
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content={`${SITE_URL}/`} />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:image" content={`${SITE_URL}/og-image.png`} />
-      <meta property="og:site_name" content="LOftPOS" />
-      <meta property="og:locale" content="en_IN" />
-
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={`${SITE_URL}/og-image.png`} />
-
-      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
-    </Helmet>
+    <PageSEO
+      title={title}
+      description={description}
+      canonical={`${SITE_URL}/`}
+      keywords="gaming cafe POS, restaurant POS software, cafe POS software, gaming cafe billing software, restaurant billing software, cafe billing software, inventory management software, cloud POS software, LoftPOS"
+      jsonLd={jsonLd}
+    />
   )
 }
