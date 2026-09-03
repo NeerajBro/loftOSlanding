@@ -57,6 +57,12 @@ const contactItems = [
   {
     Icon: FiMail,
     label: 'Email',
+    href: 'mailto:info@loftpos.com',
+    text: 'info@loftpos.com',
+  },
+  {
+    Icon: FiMail,
+    label: 'Email (alt)',
     href: 'mailto:loft64venture@gmail.com',
     text: 'loft64venture@gmail.com',
   },
@@ -78,7 +84,7 @@ export default function Footer() {
               and reports under your brand.
             </p>
 
-            <div id="contact" className="mt-6">
+            <div className="mt-6">
               <p className="text-xs font-bold uppercase tracking-wider text-ink dark:text-white">
                 Contact us
               </p>

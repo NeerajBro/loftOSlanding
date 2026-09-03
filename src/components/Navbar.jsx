@@ -11,6 +11,7 @@ const sectionLinks = [
   { to: '/solutions', label: 'Solutions' },
   { href: '/#pricing', label: 'Pricing' },
   { href: '/#faq', label: 'FAQ' },
+  { href: '/#contact', label: 'Contact us' },
 ]
 
 export default function Navbar() {

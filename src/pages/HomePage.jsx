@@ -17,6 +17,7 @@ import Testimonials from '../components/Testimonials'
 import Statistics from '../components/Statistics'
 import Pricing from '../components/Pricing'
 import FAQ from '../components/FAQ'
+import Contact from '../components/Contact'
 import FinalCTA from '../components/FinalCTA'
 import Footer from '../components/Footer'
 
@@ -43,6 +44,7 @@ export default function HomePage() {
         <Statistics />
         <Pricing />
         <FAQ />
+        <Contact />
         <FinalCTA />
       </main>
       <Footer />

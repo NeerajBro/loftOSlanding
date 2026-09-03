@@ -36,6 +36,7 @@ LoftPOS is a multi-tenant cloud POS platform that combines gaming session billin
 
 ## Contact
 - Website: https://loftpos.com/
+- Email: info@loftpos.com
 - Email: loft64venture@gmail.com
 - Phone: +91 9987762009
 - Instagram: https://www.instagram.com/loft64hq/
