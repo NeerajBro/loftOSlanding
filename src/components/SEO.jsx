@@ -21,7 +21,7 @@ const jsonLd = {
       description:
         'POS and management software for gaming cafes, restaurants, and cafes — sessions, bookings, memberships, billing, inventory, and reports.',
       email: ['info@loftpos.com', 'loft64venture@gmail.com'],
-      telephone: '+91-9987762009',
+      telephone: ['+91-9987762009', '+91-9819521816'],
       sameAs: ['https://www.instagram.com/loft64hq/'],
     },
     {

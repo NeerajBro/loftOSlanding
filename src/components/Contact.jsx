@@ -20,6 +20,12 @@ const contactItems = [
     text: '+91 9987762009',
   },
   {
+    Icon: FiPhone,
+    label: 'Phone (alt)',
+    href: 'tel:+919819521816',
+    text: '+91 9819521816',
+  },
+  {
     Icon: FiMail,
     label: 'Email',
     href: `mailto:${CONTACT_EMAIL}`,
