@@ -1,8 +1,9 @@
-﻿import { useEffect, useMemo, useState } from 'react'
+﻿import { useEffect, useState } from 'react'
 import { useTrialSignup } from '../context/TrialSignupContext'
+import { posApiBase } from '../data/saasPricing'
 
 const THANK_YOU_MESSAGE =
-  'Thank you for your interest in LOftPOS. Your account has been created. Please check your email for the activation link. Click that link to activate your account, then sign in  to start your free trial.'
+  'Thank you for your interest in LoftPOS. Your account has been created. Please check your email for the activation link. Click that link to activate your account, then sign in  to start your free trial.'
 
 export default function TrialSignupModal() {
   const { open, closeTrialSignup } = useTrialSignup()
@@ -13,13 +14,7 @@ export default function TrialSignupModal() {
   const [error, setError] = useState('')
   const [success, setSuccess] = useState(false)
 
-  const trialApiBase = useMemo(() => {
-    if (import.meta.env.VITE_POS_API_BASE) {
-      return String(import.meta.env.VITE_POS_API_BASE).replace(/\/$/, '')
-    }
-    if (import.meta.env.DEV) return 'http://127.0.0.1:7777/api'
-    return 'https://pos-api.loftsixtyfour.com/api'
-  }, [])
+  const trialApiBase = posApiBase()
 
   useEffect(() => {
     if (open) {

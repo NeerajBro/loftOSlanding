@@ -7,16 +7,21 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies and build
 node_modules
 dist
 dist-ssr
+.output
+.vite
+coverage
+
+# Env and secrets (keep .env.example)
+.env
+.env.*
+!.env.example
+
+# Local Vite / editor
 *.local
-
-# Source demo recordings (compressed copies live in public/videos/)
-*.mp4
-!public/videos/*.mp4
-
-# Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -26,3 +31,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+*.pem
+*.key
+
+# Source demo recordings (compressed copies live in public/videos/)
+*.mp4
+!public/videos/*.mp4

@@ -228,7 +228,7 @@ export default function ProductDemo() {
         <SectionHeading
           light
           eyebrow="Product demo"
-          title="See LOftPOS in action"
+          title="See LoftPOS in action"
           subtitle="Real screen recordings from gaming sessions, restaurant checkout, lounge booking, and analytics — the same flows your floor runs every night."
         />
 

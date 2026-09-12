@@ -104,7 +104,7 @@ function SectionBlock({ block }) {
             Book free demo
           </Button>
           <Button href="/" variant="ghost">
-            Explore LOftPOS
+            Explore LoftPOS
           </Button>
         </div>
       </div>
@@ -264,7 +264,7 @@ export default function BlogPost() {
               </div>
 
               <div className="rounded-2xl border border-line bg-foam p-5 dark:border-line-dark dark:bg-ink-soft">
-                <p className="font-display text-sm font-bold text-ink dark:text-white">Try LOftPOS</p>
+                <p className="font-display text-sm font-bold text-ink dark:text-white">Try LoftPOS</p>
                 <p className="mt-2 text-sm text-slate dark:text-white/55">
                   POS software for gaming cafes, restaurants, and cafes with menus, QR ordering,
                   bookings, and memberships.

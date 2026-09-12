@@ -26,7 +26,7 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
             className="mb-5 font-display text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl"
           >
-            LOft<span className="text-gradient">POS</span>
+            Loft<span className="text-gradient">POS</span>
           </motion.p>
 
           <motion.p

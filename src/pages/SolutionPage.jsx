@@ -40,7 +40,7 @@ export default function SolutionPage() {
       },
       {
         '@type': 'SoftwareApplication',
-        name: 'LOftPOS',
+        name: 'LoftPOS',
         applicationCategory: 'BusinessApplication',
         operatingSystem: 'Web',
         url: SITE_URL,
@@ -64,7 +64,7 @@ export default function SolutionPage() {
         title={solution.title}
         description={solution.description}
         canonical={canonical}
-        keywords={`${solution.keyword}, LOftPOS, billing software, inventory management, POS software`}
+        keywords={`${solution.keyword}, LoftPOS, billing software, inventory management, POS software`}
         jsonLd={jsonLd}
       />
 

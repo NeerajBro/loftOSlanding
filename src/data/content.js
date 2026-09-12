@@ -210,7 +210,7 @@ export const industries = [
 export const testimonials = [
   {
     quote:
-      'Checkout used to take forever on weekend nights. With LOftPOS we cut billing time by about 40% and overtime no longer slips through.',
+      'Checkout used to take forever on weekend nights. With LoftPOS we cut billing time by about 40% and overtime no longer slips through.',
     name: 'Arjun Mehta',
     role: 'Owner, Neon Play Lounge',
     metric: '40% faster billing',
@@ -231,7 +231,7 @@ export const testimonials = [
   },
   {
     quote:
-      'We onboarded three new outlets on white-label LOftPOS. Same platform, their branding — and repeat bookings jumped about 30%.',
+      'We onboarded three new outlets on white-label LoftPOS. Same platform, their branding — and repeat bookings jumped about 30%.',
     name: 'Sneha Kapoor',
     role: 'Operations Director, Arcadia Group',
     metric: '30% more repeat guests',
@@ -242,7 +242,7 @@ export const pricingPlans = [
   {
     id: 'starter',
     name: 'Starter',
-    price: '₹2,999',
+    price: '₹1,999',
     period: '/month',
     description: 'For single-location lounges getting off paper billing.',
     features: [
@@ -252,15 +252,14 @@ export const pricingPlans = [
       'Billing history & receipts',
       'Staff management (basic)',
       'White-label branding',
-      '14-day free trial',
     ],
-    cta: 'Start free trial',
+    cta: 'Choose Starter',
     highlighted: false,
   },
   {
     id: 'pro',
     name: 'Pro',
-    price: '₹5,999',
+    price: '₹3,999',
     period: '/month',
     description: 'For busy cafés that need analytics and expense clarity.',
     features: [
@@ -268,49 +267,46 @@ export const pricingPlans = [
       'Full analytics & reports',
       'Expense ledger',
       'Vendor / district sessions',
-      'Advanced staff permissions',
-      'CSV bill exports',
+      'Membership & prepaid packs',
       'Priority onboarding',
     ],
-    cta: 'Book a demo',
+    cta: 'Choose Pro',
     highlighted: false,
   },
   {
     id: 'business',
     name: 'Business',
-    price: '₹9,999',
+    price: '₹4,999',
     period: '/month',
     description: 'For multi-location and multi-tenant entertainment brands.',
     features: [
       'Everything in Pro',
-      'Lounge slot bookings & block-outs',
-      'Membership & prepaid packs',
+      'Lounge slot bookings & events',
       'Public events management',
       'Expansion inquiry CRM',
       'Feature flags per tenant',
-      'Superadmin control plane',
       'Dedicated success support',
     ],
-    cta: 'Talk to sales',
+    cta: 'Choose Business',
     highlighted: true,
   },
 ]
 
 export const faqs = [
   {
-    q: 'What is LOftPOS?',
-    a: 'LOftPOS is gaming café software and a white-label multi-tenant OS for PlayStation lounges, restaurants, and entertainment centers — covering sessions, lounge bookings, membership management, POS, QR ordering, inventory, staff, and reports.',
+    q: 'What is LoftPOS?',
+    a: 'LoftPOS is gaming café software and a white-label multi-tenant OS for PlayStation lounges, restaurants, and entertainment centers — covering sessions, lounge bookings, membership management, POS, QR ordering, inventory, staff, and reports.',
   },
   {
-    q: 'Is LOftPOS gaming café software?',
-    a: 'Yes. LOftPOS is built as gaming café software: timed play sessions with start/pause/resume, weekday and weekend rates, overtime, food add-ons, GST, and printable branded receipts for lounges and arenas.',
+    q: 'Is LoftPOS gaming café software?',
+    a: 'Yes. LoftPOS is built as gaming café software: timed play sessions with start/pause/resume, weekday and weekend rates, overtime, food add-ons, GST, and printable branded receipts for lounges and arenas.',
   },
   {
     q: 'Do you offer booking software for gaming lounges?',
-    a: 'Yes. LOftPOS includes booking software for gaming lounges — public slot booking with capacity and open hours, admin confirm/cancel flows, slot block-outs, tournaments, and public event listings.',
+    a: 'Yes. LoftPOS includes booking software for gaming lounges — public slot booking with capacity and open hours, admin confirm/cancel flows, slot block-outs, tournaments, and public event listings.',
   },
   {
-    q: 'Does LOftPOS include membership management software?',
+    q: 'Does LoftPOS include membership management software?',
     a: 'Yes. Use membership management for prepaid packs, partner/vendor session packs, member check-in into gaming sessions, and visit-aware billing so regulars and groups are easier to recognize and settle.',
   },
   {
@@ -322,12 +318,12 @@ export const faqs = [
     a: 'You create tables with unique QR codes. Guests scan, browse your menu, place orders with notes, and track status live while the kitchen board updates in real time. Settle the table bill with discount, GST, and payment mode.',
   },
   {
-    q: 'Can I white-label LOftPOS with my branding?',
+    q: 'Can I white-label LoftPOS with my branding?',
     a: 'Yes. Each business gets its own logo, colors, receipt header/footer, business name, public menu identity, and isolated data — without building software from scratch.',
   },
   {
     q: 'Can I manage multiple branches or outlets?',
-    a: 'LOftPOS is multi-tenant: each outlet is an organization with its own branding, menu, staff, and reports. Platform owners control plans, features, and onboarding from a superadmin console.',
+    a: 'LoftPOS is multi-tenant: each outlet is an organization with its own branding, menu, staff, and reports. Platform owners control plans, features, and onboarding from a superadmin console.',
   },
   {
     q: 'Can staff have different permissions?',
@@ -350,7 +346,7 @@ export const faqs = [
     a: 'Yes. Pause and resume the billing timer so guests aren’t charged for breaks. You can also extend booked minutes or run open-ended sessions.',
   },
   {
-    q: 'Does LOftPOS support UPI and cash payments?',
+    q: 'Does LoftPOS support UPI and cash payments?',
     a: 'Yes. Record cash (with tender and change), UPI, card, or other payment modes — plus payroll mode for staff meals where needed.',
   },
   {

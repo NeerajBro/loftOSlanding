@@ -84,7 +84,7 @@ export default function Contact() {
       <div className="section-pad container-page">
         <SectionHeading
           eyebrow="Contact us"
-          title="Talk to the LOftPOS team"
+          title="Talk to the LoftPOS team"
           subtitle="Questions about gaming café POS, restaurant billing, or a white-label setup? Reach out — we usually reply within one business day."
         />
 

@@ -24,10 +24,10 @@ LoftPOS is a multi-tenant cloud POS platform that combines gaming session billin
 - Restaurant POS, QR menus, kitchen display, inventory audit trail, expense ledger, and multi-branch control
 
 ## Pricing (INR)
-- Starter: ₹2,999/month
-- Pro: ₹5,999/month
-- Business: ₹9,999/month
-- 14-day free trial available
+- Free Trial: ₹0 for 14 days (Starter features, no payment)
+- Starter: ₹1,999/month or ₹19,190/year (save 20%)
+- Pro: ₹3,999/month or ₹38,390/year (save 20%)
+- Business: ₹4,999/month or ₹47,990/year (save 20%)
 
 ## Blog guides
 - Gaming café software: https://loftpos.com/blog/gaming-cafe-software

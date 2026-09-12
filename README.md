@@ -1,6 +1,6 @@
-﻿# LOftPOS Landing
+﻿# LoftPOS Landing
 
-Premium marketing site for **LOftPOS** — the complete white-label gaming, café & restaurant management platform.
+Premium marketing site for **LoftPOS** — the complete white-label gaming, café & restaurant management platform.
 
 ## Stack
 
