@@ -167,6 +167,66 @@ export const solutions = [
     ],
     relatedSlugs: ['gaming-cafe', 'restaurant'],
   },
+  {
+    slug: 'meta-event-ads',
+    title: 'Meta Event Ads for Venues | Facebook & Instagram',
+    h1: 'Promote venue events on Facebook and Instagram from LoftPOS',
+    description:
+      'LoftPOS Meta event ads let owners launch Facebook and Instagram campaigns for events they already run — budget, audience, and booking link in one flow, without changing tickets or check-in.',
+    eyebrow: 'Meta event ads',
+    keyword: 'Meta event ads for venues',
+    features: [
+      {
+        title: 'Promote the event you already created',
+        detail:
+          'Open Promote on an existing event. Tickets, Razorpay payments, QR check-in, and public booking stay the same. An event with no ad runs exactly as before.',
+      },
+      {
+        title: 'Connect Meta without pasting tokens',
+        detail:
+          'Owners and admins connect a Meta ad account, Facebook Page, and optional Instagram account through Meta login. The access token stays on the server.',
+      },
+      {
+        title: 'Facebook and Instagram placements',
+        detail:
+          'Choose Facebook, Instagram, or both. Ads use the event image, headline, and text, and send people to your public event page or an external booking link.',
+      },
+      {
+        title: 'Budget and audience in INR',
+        detail:
+          'Set a daily or lifetime budget in rupees, a start and end date, and an audience by country, age, and gender. Objectives are link traffic or awareness.',
+      },
+      {
+        title: 'Launch, pause, and resume',
+        detail:
+          'Launch is a separate confirmed step. Pause, resume, or archive a live campaign. A second launch is blocked while one promotion is already running.',
+      },
+      {
+        title: 'Ad results next to bookings',
+        detail:
+          'See Meta spend, impressions, reach, clicks, and click-through rate beside paid bookings recorded in LoftPOS for that same event.',
+      },
+    ],
+    faqs: [
+      {
+        q: 'Do Meta ads change how event tickets work?',
+        a: 'No. Advertising is optional and stored separately from the event. Tickets, payments, QR check-in, and the public booking page behave the same when you do not promote an event.',
+      },
+      {
+        q: 'Who can launch a Meta campaign?',
+        a: 'Only organization owners and admins, and only after Meta event ads are enabled for that venue. Floor staff cannot open ad settings or spend budget.',
+      },
+      {
+        q: 'Where does the ad send people?',
+        a: 'Internal events link to your public upcoming-events page for that venue and event. External events use the booking link already saved on the event.',
+      },
+      {
+        q: 'What do I need before the first campaign?',
+        a: 'A Meta Business ad account, a Facebook Page, and — if you want Instagram — a connected Instagram account. LoftPOS does not ask you to paste an access token.',
+      },
+    ],
+    relatedSlugs: ['gaming-cafe', 'cafe'],
+  },
 ]
 
 export function getSolutionBySlug(slug) {

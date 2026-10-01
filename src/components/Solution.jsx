@@ -6,6 +6,7 @@ import {
   FiGrid,
   FiPackage,
   FiPieChart,
+  FiRadio,
   FiShoppingCart,
   FiSmartphone,
   FiTarget,
@@ -25,6 +26,7 @@ const iconMap = {
   qr: FiSmartphone,
   expense: FiCreditCard,
   crm: FiTarget,
+  ads: FiRadio,
 }
 
 const flowIcons = {

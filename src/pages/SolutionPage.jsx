@@ -208,7 +208,7 @@ export function SolutionsIndexPage() {
     name: 'LoftPOS Solutions',
     url: canonical,
     description:
-      'Industry-specific POS and management software for gaming cafes, restaurants, and cafes.',
+      'POS and management software for gaming cafes, restaurants, and cafes, including optional Meta ads for venue events.',
     hasPart: solutions.map((s) => ({
       '@type': 'WebPage',
       name: s.title,
@@ -220,9 +220,9 @@ export function SolutionsIndexPage() {
     <>
       <PageSEO
         title="POS Solutions for Gaming Cafes, Restaurants & Cafes"
-        description="Explore LoftPOS solutions for gaming cafe POS, restaurant billing software, and cafe POS — sessions, bookings, inventory, and reports in one platform."
+        description="Explore LoftPOS solutions for gaming cafe POS, restaurant billing, cafe POS, and Meta event ads on Facebook and Instagram."
         canonical={canonical}
-        keywords="gaming cafe POS, restaurant POS software, cafe POS software, LoftPOS solutions"
+        keywords="gaming cafe POS, restaurant POS software, cafe POS software, Meta event ads, LoftPOS solutions"
         jsonLd={jsonLd}
       />
 
@@ -235,13 +235,14 @@ export function SolutionsIndexPage() {
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/70 sm:text-lg">
               LoftPOS adapts to how your venue sells time, food, and memberships — with billing,
-              inventory, and reports under your brand.
+              inventory, and reports under your brand. When Meta event ads are enabled, owners can
+              also promote an existing event on Facebook and Instagram.
             </p>
           </div>
         </section>
 
         <section className="bg-mist py-16 dark:bg-ink lg:py-20">
-          <div className="section-pad container-page grid gap-5 md:grid-cols-3">
+          <div className="section-pad container-page grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
             {solutions.map((solution) => (
               <article
                 key={solution.slug}

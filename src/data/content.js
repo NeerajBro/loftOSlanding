@@ -97,6 +97,11 @@ export const solutions = [
     description: 'Credit/debit ledger tied to reports so profit isn’t a guess.',
     icon: 'expense',
   },
+  {
+    title: 'Meta event ads',
+    description: 'Promote an event on Facebook and Instagram with budget, audience, and booking results.',
+    icon: 'ads',
+  },
 ]
 
 export const systemFlow = [
@@ -180,6 +185,14 @@ export const featureCards = [
     benefit: 'Your logo, colors, receipts, and menu identity — without custom software.',
     icon: 'brand',
     tags: ['Logo & colors', 'Custom receipts', 'Own domain ready'],
+  },
+  {
+    title: 'Meta event ads',
+    problem: 'Event posts live in Ads Manager, far from tickets and the booking page.',
+    benefit:
+      'Connect Meta once, then promote an existing event on Facebook and Instagram. Set an INR budget and audience, and compare ad clicks with paid bookings in LoftPOS.',
+    icon: 'ads',
+    tags: ['Facebook & Instagram', 'INR budgets', 'Pause / resume', 'Booking results'],
   },
 ]
 
@@ -384,6 +397,10 @@ export const faqs = [
   {
     q: 'How do I get started?',
     a: 'Book a free demo or start a trial. We’ll onboard your workspace, branding, game rates, and menu so your team can go live quickly.',
+  },
+  {
+    q: 'Can I advertise events on Facebook and Instagram?',
+    a: 'Yes, when Meta event ads are enabled for your venue. Owners and admins connect a Meta ad account and promote an existing event with an INR budget, audience, and Facebook or Instagram placement. Tickets, payments, and check-in are unchanged.',
   },
 ]
 

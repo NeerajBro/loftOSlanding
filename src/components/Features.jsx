@@ -7,6 +7,7 @@ import {
   FiLayers,
   FiPackage,
   FiPieChart,
+  FiRadio,
   FiShoppingCart,
   FiUsers,
   FiBriefcase,
@@ -25,6 +26,7 @@ const iconMap = {
   calendar: FiCalendar,
   brand: FiLayers,
   vendor: FiBriefcase,
+  ads: FiRadio,
 }
 
 export default function Features() {

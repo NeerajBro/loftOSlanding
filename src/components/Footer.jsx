@@ -18,6 +18,7 @@ const columns = [
       { label: 'Gaming cafe POS', to: '/solutions/gaming-cafe' },
       { label: 'Restaurant POS', to: '/solutions/restaurant' },
       { label: 'Cafe POS', to: '/solutions/cafe' },
+      { label: 'Meta event ads', to: '/solutions/meta-event-ads' },
       { label: 'All solutions', to: '/solutions' },
     ],
   },

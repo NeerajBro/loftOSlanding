@@ -15,6 +15,7 @@ LoftPOS is a multi-tenant cloud POS platform that combines gaming session billin
 - Gaming cafe POS: https://loftpos.com/solutions/gaming-cafe
 - Restaurant POS: https://loftpos.com/solutions/restaurant
 - Cafe POS: https://loftpos.com/solutions/cafe
+- Meta event ads: https://loftpos.com/solutions/meta-event-ads
 - All solutions: https://loftpos.com/solutions
 
 ## Core capabilities
@@ -22,6 +23,7 @@ LoftPOS is a multi-tenant cloud POS platform that combines gaming session billin
 - Booking software for gaming lounges: public slot bookings, capacity rules, admin block-outs, tournaments, and events
 - Membership management software: memberships, prepaid packs, guest profiles, and repeat-visit workflows at checkout
 - Restaurant POS, QR menus, kitchen display, inventory audit trail, expense ledger, and multi-branch control
+- Meta event ads: optional Facebook and Instagram campaigns for an existing event, with INR budget, audience, pause/resume, and ad results next to paid bookings
 
 ## Pricing (INR)
 - Free Trial: ₹0 for 14 days (Starter features, no payment)

@@ -42,6 +42,7 @@ const jsonLd = {
         'Restaurant and cafe POS with GST',
         'QR menu ordering and kitchen display',
         'Inventory and staff permissions',
+        'Meta ads for venue events on Facebook and Instagram',
         'White-label multi-tenant branding',
       ],
       offers: {
